@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"interacted",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"interacted",
+  "parent":{
+    "name":"cutscene",
+    "path":"folders/Scripts/cutscene.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

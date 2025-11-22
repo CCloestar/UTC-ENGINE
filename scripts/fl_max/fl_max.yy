@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fl_max",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fl_max",
+  "parent":{
+    "name":"follower",
+    "path":"folders/Scripts/follower.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

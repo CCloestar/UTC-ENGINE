@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"showcol",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"showcol",
+  "parent":{
+    "name":"debug",
+    "path":"folders/Scripts/debug.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

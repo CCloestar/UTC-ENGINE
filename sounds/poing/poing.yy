@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"poing",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.06208617,
+  "exportDir":"",
+  "name":"poing",
+  "parent":{
+    "name":"cutscene",
+    "path":"folders/Sounds/sfx/cutscene.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"poing.ogg",
+  "volume":1.0,
+}

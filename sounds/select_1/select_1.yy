@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"select_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.18427083,
+  "exportDir":"",
+  "name":"select_1",
+  "parent":{
+    "name":"menu",
+    "path":"folders/Sounds/sfx/menu.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"select_1.ogg",
+  "volume":1.0,
+}

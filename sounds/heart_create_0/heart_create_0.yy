@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"heart_create_0",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.0,
+  "exportDir":"",
+  "name":"heart_create_0",
+  "parent":{
+    "name":"heart",
+    "path":"folders/Sounds/sfx/heart.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"heart_create_0.ogg",
+  "volume":1.0,
+}

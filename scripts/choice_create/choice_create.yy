@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"choice_create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"choice_create",
+  "parent":{
+    "name":"dialogue",
+    "path":"folders/Scripts/cutscene/general/dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

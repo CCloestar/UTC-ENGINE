@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mask_lay",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mask_lay",
+  "parent":{
+    "name":"effects",
+    "path":"folders/Scripts/effects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

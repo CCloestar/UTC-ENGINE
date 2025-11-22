@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"audio_pause",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"audio_pause",
+  "parent":{
+    "name":"sfx",
+    "path":"folders/Scripts/audio/sfx.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"heart_state",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"heart_state",
+  "parent":{
+    "name":"battle",
+    "path":"folders/Scripts/battle.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

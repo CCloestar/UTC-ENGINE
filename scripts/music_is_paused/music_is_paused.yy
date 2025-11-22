@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"music_is_paused",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"music_is_paused",
+  "parent":{
+    "name":"music",
+    "path":"folders/Scripts/audio/music.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

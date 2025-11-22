@@ -1,0 +1,1 @@
+if surface_exists(b_enemy.surf) {surface_free(b_enemy.surf)}

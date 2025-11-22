@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"r_pressed",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"r_pressed",
+  "parent":{
+    "name":"keyboard",
+    "path":"folders/Scripts/keyboard.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

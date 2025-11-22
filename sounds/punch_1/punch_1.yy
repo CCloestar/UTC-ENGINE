@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"punch_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.327125,
+  "exportDir":"",
+  "name":"punch_1",
+  "parent":{
+    "name":"fight",
+    "path":"folders/Sounds/sfx/battle/fight.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"punch_1.ogg",
+  "volume":0.97,
+}

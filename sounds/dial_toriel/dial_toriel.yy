@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"dial_toriel",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.0733125,
+  "exportDir":"",
+  "name":"dial_toriel",
+  "parent":{
+    "name":"dialogues",
+    "path":"folders/Sounds/sfx/dialogues.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"dial_toriel.ogg",
+  "volume":1.0,
+}

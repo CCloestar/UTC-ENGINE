@@ -1,0 +1,1 @@
+camera_set_view_target(c,o_camera)

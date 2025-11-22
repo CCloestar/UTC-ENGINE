@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"area_pitch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"area_pitch",
+  "parent":{
+    "name":"room",
+    "path":"folders/Scripts/room.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

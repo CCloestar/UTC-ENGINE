@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"victory_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.0129932,
+  "exportDir":"",
+  "name":"victory_1",
+  "parent":{
+    "name":"cutscene",
+    "path":"folders/Sounds/sfx/cutscene.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"victory_1.wav",
+  "volume":1.0,
+}

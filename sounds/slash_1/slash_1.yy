@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"slash_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.9533787,
+  "exportDir":"",
+  "name":"slash_1",
+  "parent":{
+    "name":"fight",
+    "path":"folders/Sounds/sfx/battle/fight.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"slash_1.ogg",
+  "volume":1.0,
+}
