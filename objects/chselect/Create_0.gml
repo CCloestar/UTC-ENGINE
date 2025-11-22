@@ -97,6 +97,7 @@ col = c_red
 if !tt {
 	load_soul()
 	room_goto(rm_intro)
+	global.init = 0
 }
 else {
 	csong = "mus_drone_" + string(global.gamemode)

@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"UNDERTALE CYAN",
+  "%Name":"UTC ENGINE",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -95,7 +95,7 @@
     {"$GMIncludedFile":"","%Name":"customs.ini","CopyToMask":-1,"filePath":"datafiles/Customs","name":"customs.ini","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"lang_all.json","CopyToMask":-1,"filePath":"datafiles/lang","name":"lang_all.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"lang_en.json","CopyToMask":-1,"filePath":"datafiles/lang","name":"lang_en.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"lang_jp.json","CopyToMask":-1,"filePath":"datafiles/lang","name":"lang_jp.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"lang_ja.json","CopyToMask":-1,"filePath":"datafiles/lang","name":"lang_ja.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"langList.ini","CopyToMask":-1,"filePath":"datafiles/lang","name":"langList.ini","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"mus_chokedup.ogg","CopyToMask":-1,"filePath":"datafiles","name":"mus_chokedup.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"mus_dance_of_dog.ogg","CopyToMask":-1,"filePath":"datafiles","name":"mus_dance_of_dog.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -114,7 +114,7 @@
   "MetaData":{
     "IDEVersion":"2024.14.1.210",
   },
-  "name":"UNDERTALE CYAN",
+  "name":"UTC ENGINE",
   "resources":[
     {"id":{"name":"act","path":"objects/act/act.yy",},},
     {"id":{"name":"afterimage","path":"objects/afterimage/afterimage.yy",},},
