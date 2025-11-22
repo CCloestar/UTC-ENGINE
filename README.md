@@ -51,10 +51,11 @@ Oh, but wait! we are not done yet.
 # WE HAVE A DOWNLOADABLE MANUAL DOC
 
 We recommend reading the MANUAL, as it teaches not only the basics, but all the things you need to know before truly working on your Fangame with UTC engine!
+Read and Download it [HERE](https://docs.google.com/document/d/1lJinYj0_rYeb4-VakqFLUDXGS_X-d_wLlGJMHsN7WWo/).
 
-
-
-
-
-
-
+# CREDITS / SPECIAL THANKS
+- Toby Fox: For making UNDERTALE and its engine, some of the code was referenced and/or searched for the making of this engine.
+- YoYo Games: For making GAMEMAKER STUDIO 2 itself.
+- ThatOneJ: Feedback and assistance.
+- Real: Assistance for the enemy dust effect (in battles).
+- You: for taking the time to read all of this!
