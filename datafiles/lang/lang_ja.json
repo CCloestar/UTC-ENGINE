@@ -24,7 +24,7 @@
 	"set_3": "ライトモード",
 	"set_4": "サウンド",
 	"set_5": "ミュージック",
-	"holdx": " [[[0]]または [[1]]キーを押し続けて微調整する]",
+	"holdx": "[[[0]]または [[1]]キーを押し続けて微調整する]",
 	"set_6": "げんご",
 	"set_7": "フレーム",
 	"b_0": "なし",
@@ -83,7 +83,7 @@
 	"Go Back": "もどる",
 	"Name the fallen human.": "おちたニンゲンに なまえをつけてください",
 	"Is this name correct?": "このなまえで\nよろしいですか？",
-	"toriel_fun": "ちゃんと　なまえを#かんがえるのよ。"
+	"toriel_fun": "ちゃんと　なまえを#かんがえるのよ。",
 	"WARNING: this name will \nmake your life hell. \nProceed anyway?": "けいこく：このなまえは\nじごくへの  いりぐち…\nこのまま  はじめますか？",
 	"A name has already \nbeen chosen.": "すでに  なまえが\nつけられています。",
 	"hp_0": "hp",
