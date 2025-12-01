@@ -3,7 +3,7 @@
 
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/93b12850-1787-425a-8c97-e299b4d46d48" />
 
-It's recommended for those who are willing to make UNDERTALE Soul projects, such as [UNDERTALE YELLOW](https://gamejolt.com/games/UndertaleYellow/136925) or (self indugent plug here...) [UNDERTALE CYAN!](https://gamejolt.com/games/undertalechopper/922314) (Although it *might* be possible to create any other AUs within this engine, just be warned that it wasn't tested for that.)
+It's recommended for those who are willing to make UNDERTALE Soul projects, such as [UNDERTALE YELLOW](https://gamejolt.com/games/UndertaleYellow/136925) or (self indulgent plug here...) [UNDERTALE CYAN!](https://gamejolt.com/games/undertalechopper/922314) (Although it *might* be possible to create any other AUs within this engine, just be warned that it wasn't tested for that.)
 
 # **FRAMEWORK DIFFERENCES**
 This framework was built with the goal of staying somewhat accurate with UNDERTALE's gameplay while having some original diferences here and there. 
