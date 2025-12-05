@@ -939,19 +939,49 @@ switch menuScene {
 					continue
 				}
 				
-				var sep = 30
+				var list = string(working_directory) + @"\lang\langList.ini"
+				var l
+	
+				l[0] = "en"
+	
+				if file_exists(list) {
+					ini_open(list)
+						var f = 1
+		
+						for (var i2 = 0;i2 < f;i2++) {
+							if ini_key_exists("list",string(i2)) {
+								l[i2] = ini_read_string("list",string(i2),"")
+
+								f++
+							}
+						}
+					ini_close()
+				}
+				else {show_debug_message(list + " Doesn't exist!")}
 				
+				var noLang = (array_length(l) <= 1)
+
+				var sep = 30
+
 				if i {sp += sep}
 				if i > 3 {
 					sp += sep
-					
+
 					if !global.canRun {sp -= 30}
 					if !global.hasLmode {sp -= 30}
 				}
-				if i > 5 {sp += sep}
+				if i > 5 {
+					sp += sep
+
+					if noLang {sp -= 30}
+				}
 
 				var st = "set_" + string(i)
 				if i = 8 {st = "set_8_" + string(con)}
+				if i = 6 and noLang {
+					st = ""
+					o[5] = ""
+				}
 				
 				draw_set_color(c_white)
 				if op = i {
