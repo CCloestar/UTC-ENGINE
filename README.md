@@ -58,4 +58,5 @@ Read and Download it [HERE](https://docs.google.com/document/d/1lJinYj0_rYeb4-Va
 - YoYo Games: For making GAMEMAKER STUDIO 2 itself.
 - ThatOneJ: Feedback and assistance.
 - Real: Assistance for the enemy dust effect (in battles).
+- colinator27/BeholdMaxine/Spasco: For the UNDERTALE 10th Anniversary dust effect in general.
 - You: for taking the time to read all of this!
