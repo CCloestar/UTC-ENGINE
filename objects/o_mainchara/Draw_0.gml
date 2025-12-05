@@ -20,7 +20,7 @@
 			if rKills - st > 0 {
 				pp = rKills / (rKills - st)
 				if pp > 8 {pp = 8}
-			
+
 				r_step = (r_st + irandom_range(1,r_amt)) * pp
 			}
 			else {
@@ -28,6 +28,11 @@
 				else {r_step = (r_st + round(r_amt / 2)) * 5}
 
 				if global.kills[dw] < rKills {global.kills[dw] = rKills}
+			}
+
+			if global.battled and global.kills[dw] < rKills {
+				r_step *= 3
+				r_step += (global.kills[dw] - rKills)
 			}
 		}
 	}
