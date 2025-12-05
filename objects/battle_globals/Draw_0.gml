@@ -369,7 +369,7 @@ else {
 
 								for (var i = 0;i < array_length(en[curIt].a) + 1;i++) {
 									pp[i,0] = 100 + (256 * (i % 2 == 1))
-									pp[i,1] = 278 + (32 * (ceil((i + 1) / 2) - 1))
+									pp[i,1] = 278 + (lh * (ceil((i + 1) / 2) - 1))
 
 									che[0] = text("* Check")
 									checo[0] = c_white
@@ -935,7 +935,7 @@ function load_button_txts(){
 
 				for (var i = 0;i < 4;i++) {
 					pp[i,0] = 100 + (240 * (i % 2 == 1))
-					pp[i,1] = 278 + (32 * (ceil((i + 1) / 2) - 1))
+					pp[i,1] = 278 + (lh * (ceil((i + 1) / 2) - 1))
 				
 					its[i] = "* " + text(global.item[i + (4 * p),(1 + tense) + (3 * dw)])
 					if global.item[i + (4 * p),(1 + tense) + (3 * dw)] = "" {its[i] = ""}
@@ -963,7 +963,7 @@ function load_button_txts(){
 			s.preset = 1
 			s.reset = 0
 			s.d_col = scol
-			s.y_sep = 32
+			s.y_sep = lh
 			s.m[0] = text("* Spare")
 
 			if canRun {s.m[0] += "~W &&" + text("* Flee")}
