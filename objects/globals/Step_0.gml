@@ -87,4 +87,6 @@ else {
 
 if global.xp and global.spares[dw_check()] {global.route = 1}
 
+lmode_ef()
+
 if resetted {event_perform(ev_create,globals)}
