@@ -1,3 +1,4 @@
+/*
 var ww = window_get_width()
 var hh = window_get_height()
 var sx = surface_get_width(application_surface)
