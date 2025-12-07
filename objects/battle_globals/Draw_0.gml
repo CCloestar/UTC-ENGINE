@@ -200,7 +200,9 @@ else {
 			
 				with (end_fade) {
 					alphaValue = 0.06
-					if !global.bstory {alphaValue = 10}
+					if !global.bstory and heart.scene != -2 {alphaValue = 10}
+
+					music_set_volume(global.music[0],musicFadeOut)
 					m = asset_get_index(global.curRoom)
 				}
 			}
