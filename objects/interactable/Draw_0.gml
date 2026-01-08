@@ -122,7 +122,7 @@ switch trigger {
 }
 
 if sprite_index != d_interact {
-	mask_lay(,1)
+	mask_lay(,dep)
 	draw_area(,xx,yy)
 	draw_hitbox()
 }
