@@ -159,7 +159,7 @@ if file_exists(global.soulfile) {
 
 lmode_ef()
 
-if !i_exists(border) {i_create(x - 160,y - 32,depth - 9,border)}
+if !i_exists(border) {i_create(x - 159.5,y - 32,depth - 9,border)}
 
 myHP = 0
 itPronoun = 0
