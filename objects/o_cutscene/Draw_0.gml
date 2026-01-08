@@ -1,7 +1,7 @@
 draw_area()
 if sil {draw_sprite_s(scol)}
 
-if global.showcol {
+if global.showcol and display.d {
 	var o
 	o[0] = x
 	o[1] = y
