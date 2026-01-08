@@ -17,7 +17,7 @@ switch preset {
 	case 0:
 		var yy = 320
 		
-		if oWorld {yy = 320 - (310 * (o_mainchara.y >= (camera_get_view_y(view_camera[0]) + 120)))}
+		if oWorld and pos != 1 {yy = 320 - (310 * (o_mainchara.y >= (camera_get_view_y(view_camera[0]) + 120)))}
 
 		y = yy + 28
 		x = 58
