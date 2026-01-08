@@ -29,6 +29,7 @@ last_m = -1
 preset = 0
 reset = 0
 spec = 0
+pos = 1
 
 for (var i = 0;i < 64;i++) {
 	c[i] = ""
