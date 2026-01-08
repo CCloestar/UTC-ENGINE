@@ -236,6 +236,7 @@ switch menuScene {
 						
 						if global.hard = 2 {draw_set_color(c_red)}
 						draw_txt(102 - shx,294 - shy,text("inst5_" + string(global.hard = 2)))
+						draw_set_color(c_silver)
 					}
 				}
 				
