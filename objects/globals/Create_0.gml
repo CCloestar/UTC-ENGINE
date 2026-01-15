@@ -112,7 +112,6 @@ if file_exists(_c) {
 	ini_open(_c)
 		global.autoRUN = ini_read_real(_c,"autoRUN",0)
 		global.SHAKE_OPTION = ini_read_real(_c,"shake",1)
-		global.BORDEROP = ini_read_real(_c,"border",0)
 		global.s_vol = ini_read_real(_c,"s_vol",1)
 		global.m_vol = ini_read_real(_c,"m_vol",1)
 		global.lang = ini_read_real(_c,"lang",0)
