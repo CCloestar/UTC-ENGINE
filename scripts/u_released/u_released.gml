@@ -1,7 +1,12 @@
 function u_released(){
 	var g = gpad
 	var con = g._gpad
-	
-	if con < 0 {return keyboard_check_released(global.bt[2,0]) or keyboard_check_released(global.bt[2,1])}
-	else {return gamepad_button_check_released(con,gp_padu)}
+	var bt = 0
+
+	if keyboard_check_released(global.bt[2,0]) or keyboard_check_released(global.bt[2,1]) {bt = 1}
+	if con > -1 {
+		if gamepad_button_check_released(con,gp_padu) {bt = 1}
+	}
+
+	return bt
 }
