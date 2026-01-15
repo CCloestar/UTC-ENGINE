@@ -31,9 +31,9 @@ if cur_b != 0 {
 			draw_set_alpha(_a)
 			draw_set_color(c_black)
 			draw_rectangle(x,y,x + (159 - c[i]),y + 544,0)
-			draw_rectangle(x + (160 - c[i]),y,x + 960,y + (31 - c[i]),0)
+			draw_rectangle(x + (159.5 - c[i]),y,x + 960,y + (31 - c[i]),0)
 			draw_rectangle(x + (800 + c[i]),y + (32 - c[i]),x + 960,y + 544,0)
-			draw_rectangle(x + (160 - c[i]),y + (512 + c[i]),x + (799 + c[i]),y + 544,0)
+			draw_rectangle(x + (159.5 - c[i]),y + (512 + c[i]),x + (799 + c[i]),y + 544,0)
 			
 			if c[i] {
 				draw_set_color(c_white)
