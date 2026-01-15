@@ -268,7 +268,6 @@
     {"id":{"name":"fl_interpolate","path":"scripts/fl_interpolate/fl_interpolate.yy",},},
     {"id":{"name":"fl_max","path":"scripts/fl_max/fl_max.yy",},},
     {"id":{"name":"gameoverer","path":"scripts/gameoverer/gameoverer.yy",},},
-    {"id":{"name":"get_gp","path":"scripts/get_gp/get_gp.yy",},},
     {"id":{"name":"get_key","path":"scripts/get_key/get_key.yy",},},
     {"id":{"name":"gp_check_any_pressed","path":"scripts/gp_check_any_pressed/gp_check_any_pressed.yy",},},
     {"id":{"name":"gp_check_any_released","path":"scripts/gp_check_any_released/gp_check_any_released.yy",},},
