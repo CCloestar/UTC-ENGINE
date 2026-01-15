@@ -1,7 +1,12 @@
 function l_pressed(){
 	var g = gpad
 	var con = g._gpad
+	var bt = 0
+
+	if keyboard_check_pressed(global.bt[3,0]) or keyboard_check_pressed(global.bt[3,1]) {bt = 1}
+	if con > -1 {
+		if gamepad_button_check_pressed(con,gp_padl) {bt = 1}
+	}
 	
-	if con < 0 {return keyboard_check_pressed(global.bt[3,0]) or keyboard_check_pressed(global.bt[3,1])}
-	else {return gamepad_button_check_pressed(con,gp_padl)}
+	return bt
 }
