@@ -1457,38 +1457,18 @@ switch menuScene {
 							}
 
 							var dbutt
-							dbutt[0] = 2
-							dbutt[1] = 1
-							dbutt[2] = 4
+							dbutt[0] = gp_face1
+							dbutt[1] = gp_face2
+							dbutt[2] = gp_face4
 
-							var lim = gamepad_button_count(gg)
-						
-							if g.debug {lim = 3}
-						
-							for (var i = 0;i < lim;i++) {
-								var prs,butt
-
-								butt = -1
-								prs = 0
-							
-								if g.debug {
-									if ord_pressed(string(i)) {
-										prs = 1
-										butt = i
-									}
-								}
-								else {
-									butt = i
-									prs = gamepad_button_check_pressed(gg,butt)
-								}
-
-								if prs {
-									g.bt[_o] = butt
+							for (var i = gp_face1;i < gp_extra6;i++) {
+								if gamepad_button_check_pressed(gg,i) and !delay {
+									g.bt[_o] = i
 									trigger[_o] = 0
 									can_select = 1
-									
+
 									ini_open(_c)
-										save_file(g.bt[o],"bt_" + string(o),dbutt[o],,_c)
+										save_file(g.bt[_o],"bt_" + string(_o),dbutt[_o],,_c)
 									ini_close()
 								}
 							}
