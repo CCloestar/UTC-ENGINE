@@ -206,7 +206,6 @@
     {"name":"fl_interpolate","order":14,"path":"scripts/fl_interpolate/fl_interpolate.yy",},
     {"name":"fl_max","order":12,"path":"scripts/fl_max/fl_max.yy",},
     {"name":"gameoverer","order":12,"path":"scripts/gameoverer/gameoverer.yy",},
-    {"name":"get_gp","order":47,"path":"scripts/get_gp/get_gp.yy",},
     {"name":"get_key","order":46,"path":"scripts/get_key/get_key.yy",},
     {"name":"gp_check_any_pressed","order":41,"path":"scripts/gp_check_any_pressed/gp_check_any_pressed.yy",},
     {"name":"gp_check_any_released","order":42,"path":"scripts/gp_check_any_released/gp_check_any_released.yy",},
