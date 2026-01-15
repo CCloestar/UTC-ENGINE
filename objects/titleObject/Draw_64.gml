@@ -1392,7 +1392,7 @@ switch menuScene {
 					
 					draw_font(1)
 					draw_set_color(ic)
-					draw_txt((array_highest(bp) + j_x) + ax,(158 + (30 * i) + j_y) + ay,string(gpad.bt[i]))
+					draw_txt((array_highest(bp) + j_x) + ax,(158 + (30 * i) + j_y) + ay,string(gpad.bt[i] - 32768))
 				}
 
 				var _o = op - (1 * (op > 0))
