@@ -37,7 +37,7 @@ if cur_b != 0 {
 			
 			if c[i] {
 				draw_set_color(c_white)
-				draw_rectangle(x + 160,y + 32,x + 799,y + 511,1)
+				draw_rectangle(x + 159.5,y + 32,x + 799,y + 511,1)
 			}
 			
 			draw_set_alpha(1)
