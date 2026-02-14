@@ -1,1 +1,1 @@
-if surface_exists(b_enemy.surf) {surface_free(b_enemy.surf)}
+if i_exists(b_enemy) and surface_exists(b_enemy.surf) {surface_free(b_enemy.surf)}
