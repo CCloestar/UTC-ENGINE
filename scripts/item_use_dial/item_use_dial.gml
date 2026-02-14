@@ -27,7 +27,7 @@ function item_use_dial(dw = 0,onlyUse = 0){
 			it_type = 1
 			at = 3
 			txt[0] = "* You equipped Toy Knife."
-			txt[1] = "* Made of plastic.&&* A rarity nowadays."
+			txt[1] = text("* Made of plastic.&&* A rarity nowadays.")
 		break
 	}
 	
@@ -45,6 +45,7 @@ function item_use_dial(dw = 0,onlyUse = 0){
 	
 	u = dial_create()
 	u.m[0] = "* If you're reading &&  this, I have messed up &&  somehow."
+	u.freeze = 0
 	
 	var xx = 0
 	var yy = 0

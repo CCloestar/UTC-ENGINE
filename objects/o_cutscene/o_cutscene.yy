@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"frog_0",
+    "path":"sprites/frog_0/frog_0.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

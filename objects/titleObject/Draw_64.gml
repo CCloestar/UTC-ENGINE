@@ -1,19 +1,26 @@
 var _c = "config.ini"
 var b = border
 var con = on_controller()
+var _si = global.simpleVFX
+var dr = m_drop
 
 if s {
 	if menuScene > 2 and menuScene < 5 {
 		timer[0]++
 				
 		if s > 1 {
-			dr = i_create(0,-10,depth - 2,m_drop)
+			if !_si {dr = i_create(0,-10,depth - 2,m_drop)}
+			else {
+				if timer[0] % 3 == 0 {dr = i_create(0,-10,depth - 2,m_drop)}
+			}
 
-			if s = 2 or s = 3 {
-				dr.image_index = 1
-						
-				if s = 2 {dr.image_blend = merge_color(c_red, c_white, choose(0,0.5))}
-				if s = 3 {dr.image_blend = choose(65535, 4235519, 255)}
+			if i_exists(dr) and (s = 2 or s = 3) {
+				if dr.image_index = 0 {
+					if s = 2 {dr.image_blend = merge_color(c_red, c_white, choose(0,0.5))}
+					if s = 3 {dr.image_blend = choose(65535, 4235519, 255)}
+					
+					dr.image_index = 1
+				}
 			}
 		}
 		
@@ -897,7 +904,7 @@ switch menuScene {
 			draw_set_halign(fa_left)
 			
 			var o
-			o[0] = text("op_" + string(global.SHAKE_OPTION))
+			o[0] = text("op_" + string(global.simpleVFX))
 			o[1] = text("op_" + string(global.autoRUN))
 			o[2] = text("op_" + string(global.lmode))
 			o[3] = string(round(global.s_vol * 100)) + "%"
@@ -991,7 +998,9 @@ switch menuScene {
 				}
 
 				draw_font(!l_check())
+				if i = 1 {draw_font(1)}
 				draw_txt(40 + j_x,(88 + sp) + j_y,text(st))
+				draw_font(!l_check())
 
 				if i < 8 and i {
 					draw_font(!l_check())
@@ -1007,11 +1016,15 @@ switch menuScene {
 				if d_pressed() and op < 8 {
 					if op != 1 {op++}
 					else {op += 1 + !global.canRun + !global.hasLmode}
+					
+					if op = 6 and noLang {op++}
 				}
 				
 				if u_pressed() and op {
 					if op != 4 {op--}
 					else {op -= 1 + !global.hasLmode + !global.canRun}
+					
+					if op = 6 and noLang {op--}
 				}
 				
 				if z_pressed() and !op {
@@ -1025,10 +1038,10 @@ switch menuScene {
 				if l_pressed() or r_pressed() or z_pressed() {
 					switch op {
 						case 1:
-							global.SHAKE_OPTION = !global.SHAKE_OPTION
+							global.simpleVFX = !global.simpleVFX
 
 							ini_open(_c)
-								save_file(global.SHAKE_OPTION,"shake",1,,_c)
+								save_file(global.simpleVFX,"simpleVFX",,,_c)
 							ini_close()
 						break
 						
@@ -1100,8 +1113,9 @@ switch menuScene {
 				if op = 6 {
 					if r_pressed() or l_pressed() or z_pressed() {
 						global.lang += ((r_pressed() or z_pressed()) - l_pressed())
+
 						load_langs()
-						
+
 						ini_open(_c)
 							save_file(global.lang,"lang",,,_c)
 						ini_close()
@@ -1493,6 +1507,8 @@ switch menuScene {
 								if g.sens[o_] >= 0.4 / ha {g.sens[o_] = 0.4 / ha}
 								if g.sens[o_] <= 0.02 / ha {g.sens[o_] = 0.02 / ha}
 
+								if gamepad_is_connected(g.gpads) {gamepad_set_axis_deadzone(g.gpads,g.sens[0])}
+
 								ini_open(_c)
 									save_file(g.sens[o_],"bs_" + string(o_),dsens[o_],,_c)
 								ini_close()
@@ -1707,7 +1723,7 @@ function menu_play() {
 }
 
 function begin_game() {
-	shakey = 0.02 * global.SHAKE_OPTION
+	shakey = 0.02 * !global.simpleVFX
 	can_select = 0
 	
 	audio_free()
@@ -1732,6 +1748,14 @@ function begin_game() {
 function check_season() {
 	int = 0
 	s = 0
+	
+	var _c = "config.ini"
+		
+	if file_exists(_c) {
+		ini_open(_c)
+			s = ini_read_real(_c,"season",s)
+		ini_close()
+	}
 
 	if s {
 		var _m = current_month
@@ -1740,8 +1764,6 @@ function check_season() {
 		if _m < 9 {s = 3}
 		if _m < 6 {s = 2}
 		if _m < 3 {s = 1}
-
-		var _c = "config.ini"
 		
 		if file_exists(_c) {
 			ini_open(_c)

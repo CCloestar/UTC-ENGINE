@@ -24,7 +24,7 @@ var _c = "config.ini"
 
 if file_exists(_c) {
 	ini_open(_c)
-		global.SHAKE_OPTION = ini_read_real(_c,"shake",global.SHAKE_OPTION)
+		global.simpleVFX = ini_read_real(_c,"simpleVFX",global.simpleVFX)
 		global.autoRUN = ini_read_real(_c,"arun",global.autoRUN)
 		for (var i = 0;i < 7;i++) {
 			for (var o = 0;o < 2;o++) {global.bt[i,o] = keyboard_get_map(ini_read_real(_c,"k_" + string(i) + "_" + string(o),global.bt[i,o]))}

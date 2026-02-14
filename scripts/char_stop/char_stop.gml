@@ -8,6 +8,8 @@ function char_stop(stopanims = 1,fl = 0){
 			image_speed = 0
 			image_index = 0
 		}
+		
+		inMenu = 0
 	}
 	
 	if fl and i_exists(o_follower) {

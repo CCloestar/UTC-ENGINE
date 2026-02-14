@@ -20,18 +20,19 @@ if global.debug and vk_hold(vk_shift) {
 	}
 }
 
-vol += 0.2
-
-if vol >= 1 {
-	vol = 1
-	global.battled = 0
-	global.next_play = 0
-}
-
-music_set_volume(,vol)
-
 if !c {
 	var sp,col
+	
+	vol += 0.2
+	
+	music_set_volume(,vol)
+
+	if vol >= 1 {
+		vol = 1
+		music_set_volume(,vol)
+		global.battled = 0
+		global.next_play = 0
+	}
 	
 	if !dir_hold() {w = 0}
 	
@@ -163,8 +164,8 @@ if !c {
 	if c_pressed() {
 		audio_play(click)
 		delay = 1
-		inMenu = 1
 		char_stop()
+		inMenu = 1
 	}
 }
 	

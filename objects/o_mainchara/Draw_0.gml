@@ -144,7 +144,17 @@ else {
 if global.debug and display.d {
 	draw_hitbox()
 
+	var o
+	o[0] = x
+	o[1] = y
+	o[2] = depth
+
+	var db
+	db[0] = "Pos: " + string(o)
+	db[1] = "Steps: " + string(step)
+	db[2] = "R.Steps: " + string(r_step)
+
 	draw_font(1)
-	draw_txt_outline(x + sprite_width + sprite_xoffset,(y + sprite_yoffset),"Steps: " + string(step),c_white,c_black,1,1,0,0.5,0.5,,,,2)
-	draw_txt_outline(x + sprite_width + sprite_xoffset,(y + sprite_yoffset) + 8,"R.Steps: " + string(r_step),c_white,c_black,1,1,0,0.5,0.5,,,,2)
+	
+	for (var i = 0;i < array_length(db);i++) {draw_txt_outline(x + sprite_width + sprite_xoffset,(y + sprite_yoffset) + (8 * i),db[i],c_white,c_black,1,1,0,0.5,0.5,,,,2)}
 }

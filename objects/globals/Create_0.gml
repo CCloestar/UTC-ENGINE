@@ -65,8 +65,8 @@ global.next_play = 0
 global.pitch = 1
 
 //CONFIGURATIONS
+global.simpleVFX = 0
 global.autoRUN = 0
-global.SHAKE_OPTION = 1
 global.s_vol = 1
 global.m_vol = 1
 global.lang = 0
@@ -111,7 +111,7 @@ var _c = "config.ini"
 if file_exists(_c) {
 	ini_open(_c)
 		global.autoRUN = ini_read_real(_c,"autoRUN",0)
-		global.SHAKE_OPTION = ini_read_real(_c,"shake",1)
+		global.simpleVFX = ini_read_real(_c,"simpleVFX",0)
 		global.s_vol = ini_read_real(_c,"s_vol",1)
 		global.m_vol = ini_read_real(_c,"m_vol",1)
 		global.lang = ini_read_real(_c,"lang",0)
@@ -159,6 +159,15 @@ if file_exists(global.soulfile) {
 lmode_ef()
 
 if !i_exists(border) {i_create(x - 159.5,y - 32,depth - 9,border)}
+else {
+	_c = global.soulfile
+
+	if file_exists(_c) {
+		ini_open(_c)
+			border.cur_b = ini_read_real(string_lower(global.soul_name),"b",border.cur_b)
+		ini_close()
+	}
+}
 
 myHP = 0
 itPronoun = 0

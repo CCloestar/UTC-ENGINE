@@ -3,6 +3,7 @@ var _gp = async_load[? "pad_index"]
 switch async_load[? "event_type"] {
 	case "gamepad discovered":
 		array_push(gpads,_gp)
+		gamepad_set_axis_deadzone(gpads,sens[0])
 	break
 	
 	case "gamepad lost":

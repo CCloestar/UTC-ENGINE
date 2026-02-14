@@ -19,6 +19,6 @@ function layercode(){
 	udeps[2] = "upperassets"
 
 	for (var i = 0;i < 3;i++) {
-		if layer_exists(udeps[i]) {layer_depth(udeps[i],-9999)}
+		if layer_exists(udeps[i]) {layer_depth(udeps[i],-10020)}
 	}
 }

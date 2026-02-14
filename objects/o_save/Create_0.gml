@@ -1,4 +1,4 @@
-image_speed = 0.2
+image_speed = 0.2 / (1 + global.simpleVFX)
 mask_lay(,1)
 
 saveScene = 0

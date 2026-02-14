@@ -3,12 +3,14 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 {
 	"lang": "US",
 	"Quitting": "Quitting",
-
+	
 	"SELECT A SOUL": "SELECT A SOUL",
 	"Quit": "Quit",
 	"Play": "Play",
 	"Do Not": "Do Not",
 
+	"undeRtale": "undeRtale",
+	"Null": "Null",
 	"start_0": "[PRESS [0] OR [1]]",
 	"start_1": "[PRESS ANY BUTTON]",
 	"HARD MODE": "HARD MODE",
@@ -24,15 +26,13 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"inst4": "[Hold ESC] - Quit",
 	"inst5_0": "When HP is 0, you lose.",
 	"inst5_1": "NO saves, NO healing, NO chances.",
-	"Begin Game": "Begin Game",
-	"Settings": "Settings",
-	
+
 	"Continue": "Continue",
 	"reset_0": "Reset",
 	"reset_1": "True Reset",
 	
 	"set_0": "EXIT",
-	"set_1": "SCREEN SHAKE",
+	"set_1": "SIMPLIFY VFX",
 	"set_2": "AUTO RUN",
 	"set_3": "LIGHT MODE",
 	"set_4": "SOUND VOLUME",
@@ -49,7 +49,7 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"set_8_1": "JOYSTICK CONFIG",
 	"op_0": "OFF",
 	"op_1": "ON",
-	
+
 	"EXIT": "EXIT",
 	"MAP A": "MAP A",
 	"MAP B": "MAP B",
@@ -99,7 +99,7 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"RESETTED...": "RESETTED...",
 	"SPAGHETTI...": "SPAGHETTI...",
 	"CONTROL TEST": "CONTROL TEST",
-	
+
 	"joy_0": "CONFIRM - [[0] + [1]] ::",
 	"joy_1": "CANCEL    - [[0] + [1]] ::",
 	"joy_2": "MENU         - [[0] + [1]] ::",
@@ -109,7 +109,7 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"dir_0": "NORMAL",
 	"dir_1": "ANALOG ONLY",
 	"dir_2": "POV ONLY",
-	
+
 	"se_null_0": "try to withstand \nthe sun's life-\ngiving rays",
 	"se_null_1": "spring time\nback to school",
 	"se_null_2": "sweep a leaf \nsweep away a \ntroubles",
@@ -121,7 +121,7 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"toriel_fun": "I think you should\nthink of your own\nname, my child.",
 	"WARNING: this name will \nmake your life hell. \nProceed anyway?": "WARNING: this name will \nmake your life hell. \nProceed anyway?",
 	"A name has already \nbeen chosen.": "A name has already \nbeen chosen.",
-
+	
 	"Go Back": "Go Back",
 	
 	"lv": "lv",
@@ -138,7 +138,7 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"USE": "USE",
 	"INFO": "INFO",
 	"DROP": "DROP",
-	
+
 	"itDesc_0": "* \"[0]\" - Heals [1] HP",
 	"itDesc_1": "* \"[0]\" - Weapon AT [1]",
 	"itDesc_2": "* \"[0]\" - Armor DF [1]",
@@ -149,7 +149,7 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	
 	"hideIt0": "* You've hidden away your&&  [0].",
 	"hideIt1": "* You've hidden away your&&  [0].",
-
+	
 	"Toy Knife": "Toy Knife",
 	"tk_pick": "* (You found the Toy Knife.)&&* (Pick it up?)&&         Yes         No",
 	"tk_picked": "* (You got the Toy Knife.)",
@@ -161,6 +161,12 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"throw_2": "* You threw the [0]&&  on the ground like the piece&&  of trash it is.",
 	"throw_3": "* You abandoned the&&  [0].",
 	"throw_4": "* The [0] was&&  thrown away.",
+
+	"Call Toriel (Test)": "Call Toriel (Test)",
+	"Call Toriel 2 (Test)": "Call Toriel 2 (Test)",
+	"Call Toriel 3 (Test)": "Call Toriel 3 (Test)",
+	
+	"LV": "LV",
 
 	"lv_1": "LV  [0]",
 	"hp_2": "HP  [0] / [1]",
@@ -174,27 +180,18 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"G_0": "GOLD: [0]",
 	"G_1": "D.GOLD: [0]",
 	
-	"notopic0": "* (You couldn't think of &&  any funny topics to &&  talk about...)",
-	"notopic1": "* (You couldn't think of &&  any awesome topics to &&  talk about...)",
-	"notopic2": "* (You couldn't think of &&  any wicked sick topics to &&  talk about...)",
-	"notopic3": "* (You couldn't think of &&  any neat topics to &&  talk about...)",
-	
-	"Call Toriel (Test)": "Call Toriel (Test)",
-	"Call Toriel 2 (Test)": "Call Toriel 2 (Test)",
-	"Call Toriel 3 (Test)": "Call Toriel 3 (Test)",
-	
-	"LV": "LV",
-	
+	"notopic0": "* (You couldn't think of any&&  funny topics to talk about...)",
+	"notopic1": "* (You couldn't think of any&&  awesome topics to talk about...)",
+	"notopic2": "* (You couldn't think of any&&  wicked sick topics to talk&&  about...)",
+	"notopic3": "* (You couldn't think of any neat&&  topics to talk about...)",
+
 	"Save": "Save",
 	"Return": "Return",
 	"fsave0": "File saved[0]",
 	"fsave1": "File saved way too much.",
 	
 	"--": "--",
-	"Ruins - ???": "Ruins - ???",
-	"Gardens - Entrance": "Gardens - Entrance",
-	"Gardens - Reunion Room": "Gardens - Reunion Room",
-	
+
 	"* (HP fully restored.)": "* (HP fully restored.)",
 	"rk": "~R* [0] Left.",
 	"* Determination.": "* Determination.",
@@ -213,23 +210,22 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"* Check": "* Check",
 
 	"page": "PAGE [0]",
-	
+
 	"* Spare": "* Spare",
 	"* Flee": "* Flee",
 	"null_e0": "* I'm outta here.",
 	"null_e1": "* I've got better to do.",
 	"null_e2": "* Escaped...",
 	"null_e3": "* Don't slow me down.",
-
+	
 	"wintxt0": "* YOU WON!&&* You earned [0] XP and [1] gold.",
 	"wintxt1": "* YOU WON!&&* You earned [0] XP and [1] d.gold.",
 	"* Your LOVE increased.": "* Your LOVE increased.",
-	"* Your LV increased.": "* Your LV increased.",
-	
+
 	"buyTxt_0": "$ - [0]G",
 	"buyTxt_1": "$ - [0]D.G",
 	"buyTxt_S": "SPACE - [0]/8",
-	
+
 	"Buy": "Buy",
 	"s_buy_0": "s_buy_0",
 	"s_refused_0": "s_refused_0",
@@ -263,20 +259,7 @@ REWRITE ALL THE AVAILABLE TEXTS HERE WITH YOUR DESIRED LANGUAGE AND ERASE THIS N
 	"talking_3": "talking_3",
 
 	"* Shop test": "* Shop test",
-	"* Cya": "* Cya"
+	"* Cya": "* Cya",
+
+	".": "."
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

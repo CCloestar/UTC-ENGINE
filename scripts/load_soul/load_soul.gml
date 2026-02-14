@@ -26,6 +26,16 @@ function load_soul(){
 			global.canRun = 0
 		break
 	}
+	
+	var _c = "config.ini"
+
+	if file_exists(_c) {
+		ini_open(_c)
+			global.canRun = ini_read_real(_c,"canRun",global.canRun)
+			global.hasLmode = ini_read_real(_c,"hasLmode",global.hasLmode)
+			global.changeName = ini_read_real(_c,"changeName",global.changeName)
+		ini_close()
+	}
 
 	switch global.gamemode {
 		default:
@@ -35,4 +45,15 @@ function load_soul(){
 	}
 
 	sprite_set_offset(collision,colx,coly)
+	
+	if i_exists(border) {
+		var _b = border
+		_c = global.soulfile
+
+		if file_exists(_c) {
+			ini_open(_c)
+				_b.cur_b = ini_read_real(string_lower(global.soul_name),"b",_b.cur_b)
+			ini_close()
+		}
+	}
 }

@@ -189,16 +189,28 @@ switch global.gamemode {
 						case 1:
 							can2 += 0.5
 
-							for (var i = 0;i < 12;i++) {
-								gpu_set_blendmode(bm_add)
-									draw_set_color(col)
-									draw_set_alpha(can2 / 16 - i / 12)
-									draw_rectangle(320 - i * i - can2 * i,-5,320 + i * i + can2 * i,500,0)
-									draw_set_color(c_white)
-									draw_rectangle(320 - i * i - (can2 / 2) * i,-5,320 + i * i + (can2 / 2) * i,500,0)
-								gpu_set_blendmode(bm_normal)
-								draw_set_alpha(1)
+							if !global.simpleVFX {
+								for (var i = 0;i < 12;i++) {
+									gpu_set_blendmode(bm_add)
+										draw_set_color(col)
+										draw_set_alpha(can2 / 16 - i / 12)
+										draw_rectangle(320 - i * i - can2 * i,-5,320 + i * i + can2 * i,500,0)
+										draw_set_color(c_white)
+										draw_rectangle(320 - i * i - (can2 / 2) * i,-5,320 + i * i + (can2 / 2) * i,500,0)
+									gpu_set_blendmode(bm_normal)
+									draw_set_alpha(1)
+								}
 							}
+							else {
+								draw_set_alpha(can2 / 20)
+								
+								gpu_set_blendmode(bm_add)
+									draw_set_color(c_white)
+									draw_rectangle(-5,-5,room_width + 5,room_height + 5,0)
+								gpu_set_blendmode(bm_normal)
+							}
+							
+							draw_set_alpha(1)
 							
 							if !audio_is_playing(heart_create_0) {faderer = 2}
 						break

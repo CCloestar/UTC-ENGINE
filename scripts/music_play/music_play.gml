@@ -4,7 +4,7 @@ function music_play(music,vol = 1,pitch = global.pitch,loop = 1,loopTime = 0,m =
 	var _sm = mus + "_" + string_lower(global.soul_name)
 	
 	if file_exists(loc + _sm + ".ogg") {mus = _sm}
-	
+
 	var _m = no_sound
 
 	if file_exists(loc + mus + ".ogg") {

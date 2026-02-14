@@ -19,6 +19,11 @@ function draw_area(s = 1,x0 = 0,y0 = 0){
 			spx = sprite_xoffset * 2
 			spy = sprite_yoffset * 2
 		break
+			
+		case "o_lever":
+			spx = sprite_xoffset
+			spy = sprite_yoffset
+		break
 	}
 	
 	var _sp = sprite_index

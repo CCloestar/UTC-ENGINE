@@ -12,7 +12,7 @@ _x = c_gray
 _c = c_gray
 
 if ord_pressed("D") {d = !d}
-if ord_pressed("S") {s = !s}
+if c_hold() and ord_pressed("S") {s = !s}
 
 if fps <= 15 {fpscol = c_red}
 

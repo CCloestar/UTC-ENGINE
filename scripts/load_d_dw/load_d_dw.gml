@@ -13,7 +13,7 @@ function load_d_dw() {
 		dwcol[7] = #AAFFE6
 	}
 	else {
-		dwcoltim++
+		dwcoltim += !global.simpleVFX
 
 		if dwcoltim >= 10 {
 			if curdwcol >= 7 {curdwcol = 0}
@@ -21,5 +21,7 @@ function load_d_dw() {
 	
 			dwcoltim = 0
 		}
+		
+		curdwcol *= !global.simpleVFX
 	}
 }
