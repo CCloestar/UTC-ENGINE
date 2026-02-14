@@ -870,7 +870,7 @@ function load_button_txts(){
 		
 		var sparecol = c_yellow
 		
-		if global.story[100] {sparecol = c_aqua}
+		if global.story[100] {sparecol = #FFBBD4}
 
 		if en[o].spare and !en[o].dead {
 			scolf[o] = sparecol
