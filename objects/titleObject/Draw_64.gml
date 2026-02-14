@@ -7,7 +7,7 @@ var dr = m_drop
 if s {
 	if menuScene > 2 and menuScene < 5 {
 		timer[0]++
-				
+
 		if s > 1 {
 			if !_si {dr = i_create(0,-10,depth - 2,m_drop)}
 			else {
