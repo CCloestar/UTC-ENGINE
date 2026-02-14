@@ -60,5 +60,5 @@ Read and Download it [HERE](https://docs.google.com/document/d/1lJinYj0_rYeb4-Va
 - Real: Assistance for the enemy dust effect (in battles).
 - colinator27/BeholdMaxine/Spasco: For the UNDERTALE 10th Anniversary dust effect in general.
 - TML's Undertale Engine: For the fullscreen borders's code (taken for inspiration/reference).
-- TBoogle: Borders pixel alignment and Gamepad assistance.
+- Tboogle: Borders pixel alignment and Gamepad assistance.
 - You: for taking the time to read all of this!
