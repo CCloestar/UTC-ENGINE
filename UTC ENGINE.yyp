@@ -296,7 +296,6 @@
     {"id":{"name":"load_checkpoint","path":"scripts/load_checkpoint/load_checkpoint.yy",},},
     {"id":{"name":"load_d_dw","path":"scripts/load_d_dw/load_d_dw.yy",},},
     {"id":{"name":"load_fonts","path":"scripts/load_fonts/load_fonts.yy",},},
-    {"id":{"name":"load_keys","path":"scripts/load_keys/load_keys.yy",},},
     {"id":{"name":"load_langs","path":"scripts/load_langs/load_langs.yy",},},
     {"id":{"name":"load_soul","path":"scripts/load_soul/load_soul.yy",},},
     {"id":{"name":"main_hold","path":"scripts/main_hold/main_hold.yy",},},

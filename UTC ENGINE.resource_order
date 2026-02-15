@@ -230,7 +230,6 @@
     {"name":"load_checkpoint","order":13,"path":"scripts/load_checkpoint/load_checkpoint.yy",},
     {"name":"load_d_dw","order":10,"path":"scripts/load_d_dw/load_d_dw.yy",},
     {"name":"load_fonts","order":8,"path":"scripts/load_fonts/load_fonts.yy",},
-    {"name":"load_keys","order":26,"path":"scripts/load_keys/load_keys.yy",},
     {"name":"load_langs","order":7,"path":"scripts/load_langs/load_langs.yy",},
     {"name":"load_soul","order":12,"path":"scripts/load_soul/load_soul.yy",},
     {"name":"main_hold","order":43,"path":"scripts/main_hold/main_hold.yy",},

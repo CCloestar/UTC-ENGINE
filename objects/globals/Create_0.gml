@@ -135,7 +135,6 @@ if file_exists(_c) {
 if !variable_global_exists("font_init") {
 	load_soul()
 	load_langs()
-	load_keys()
 	load_fonts()
 	
 	global.font_init = 1
