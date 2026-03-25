@@ -3,12 +3,13 @@ var _gp = async_load[? "pad_index"]
 switch async_load[? "event_type"] {
 	case "gamepad discovered":
 		array_push(gpads,_gp)
-		gamepad_set_axis_deadzone(gpads,sens[0])
+		if os_type != os_linux {gamepad_set_axis_deadzone(gpads,sens[0])}
+		else {sens[2] = sens[0] * 0.5}
 	break
-	
+
 	case "gamepad lost":
 		var i = array_get_index(gpads,_gp)
-		if i >= 0 {array_delete(gpads,i,1)}
+		if i > -1 {array_delete(gpads,i,1)}
 	break
 }
 

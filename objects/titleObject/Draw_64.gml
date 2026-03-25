@@ -24,7 +24,7 @@ if s {
 			}
 		}
 		
-		if menuScene = 3 or (menuScene = 4 and on_controller()) {
+		if menuScene = 3 or (menuScene = 4 and con) {
 			var sy = 120
 			
 			if s = 1 {
@@ -1378,18 +1378,7 @@ switch menuScene {
 				ay = 0
 				
 				for (var i = 0;i < 3;i++) {
-					var ic,ir,ig,ib,bp,bnp
-					
-					ic = global.color[0]
-					ir = 255 - color_get_red(ic)
-					ig = 255 - color_get_green(ic)
-					ib = 255 - color_get_blue(ic)
-
-					if !ir {ir = 0}
-					if !ig {ig = 0}
-					if !ib {ib = 0}
-
-					ic = make_color_rgb(ir,ig,ib)
+					var bp,bnp
 
 					for (var o = 0;o < 2;o++) {
 						_b[i,o] = string_upper(get_key(global.bt[4 + i,o]))
@@ -1405,7 +1394,7 @@ switch menuScene {
 					if l_check() and i {ay = 2 * i}
 					
 					draw_font(1)
-					draw_set_color(ic)
+					draw_set_color(invert_color(global.color[0]))
 					draw_txt((array_highest(bp) + j_x) + ax,(158 + (30 * i) + j_y) + ay,string(gpad.bt[i] - 32768))
 				}
 
@@ -1508,7 +1497,9 @@ switch menuScene {
 								if g.sens[o_] <= 0.02 / ha {g.sens[o_] = 0.02 / ha}
 
 								if gamepad_is_connected(g.gpads) {gamepad_set_axis_deadzone(g.gpads,g.sens[0])}
-
+								
+								g.sens[2] = g.sens[0] * 0.5
+								
 								ini_open(_c)
 									save_file(g.sens[o_],"bs_" + string(o_),dsens[o_],,_c)
 								ini_close()
@@ -1558,12 +1549,12 @@ switch menuScene {
 						else {trigger[6] = "RESETTED..."}
 					
 						timer[3] = 15
-						if !on_controller() {reset_keys()}
+						if !con {reset_keys()}
 						else {reset_gpad()}
 						
 						if file_exists(_c) {
 							ini_open(_c)
-								if !on_controller() {
+								if !con {
 									for (var i = 0;i < 7;i++) {
 										for (var o = 0;o < 2;o++) {ini_delete(_c,"k_" + string(i) + "_" + string(o))}
 									}

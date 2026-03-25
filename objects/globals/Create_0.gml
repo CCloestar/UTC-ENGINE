@@ -67,10 +67,10 @@ global.pitch = 1
 //CONFIGURATIONS
 global.simpleVFX = 0
 global.autoRUN = 0
+global.lmode = 0
 global.s_vol = 1
 global.m_vol = 1
 global.lang = 0
-global.lmode = 0
 reset_keys()
 
 global.time = 0
@@ -132,11 +132,12 @@ if file_exists(_c) {
 	ini_close()
 }
 
+load_soul()
+load_langs()
+
 if !variable_global_exists("font_init") {
-	load_soul()
-	load_langs()
 	load_fonts()
-	
+
 	global.font_init = 1
 }
 

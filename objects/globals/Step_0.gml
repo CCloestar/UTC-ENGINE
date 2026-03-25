@@ -1,6 +1,6 @@
+if vk_pressed(vk_space) {game_restart()}
+
 if global.debug {
-	if vk_pressed(vk_space) {game_restart()}
-	
 	if vk_hold(vk_shift) {
 		if !drawroom {
 			if vk_pressed(ord("2")) {
@@ -89,4 +89,7 @@ if global.xp and global.spares[dw_check()] {global.route = 1}
 
 lmode_ef()
 
-if resetted {event_perform(ev_create,globals)}
+if resetted {
+	event_perform(ev_create,globals)
+	if room = rm_title {room_goto(titleObject.chroom[global.curCh])}
+}

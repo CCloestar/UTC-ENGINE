@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cam_set_size",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cam_set_size",
+  "parent":{
+    "name":"camera",
+    "path":"folders/Scripts/cutscene/general/camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

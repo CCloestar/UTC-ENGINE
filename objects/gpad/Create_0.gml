@@ -15,3 +15,5 @@ if file_exists(_c) {
 		debug = ini_read_real(_c,"device",0)
 	ini_close()
 }
+
+sens[2] = sens[0] * 0.5

@@ -10,6 +10,8 @@ f = ch.f
 r = 2
 p = 0
 _c = c_red
+_dep = 1
+_alp = 0
 
 for (var i = 0;i < 25 * array_length(global.char);i++) {
 	_x[i] = ch.x

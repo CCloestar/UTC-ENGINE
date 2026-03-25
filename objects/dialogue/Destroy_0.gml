@@ -15,7 +15,7 @@ switch swap_post {
 		global.item[ob.curIt,3 * dw] = global.wep[0,dw]
 		global.wep[0,dw] = to_swap
 	break
-	
+
 	case 2:
 		global.item[ob.curIt,3 * dw] = global.arm[0,dw]
 		global.arm[0,dw] = to_swap
@@ -23,3 +23,5 @@ switch swap_post {
 }
 
 if call_post {cell_dialogue()}
+
+destroy(dialsmall)

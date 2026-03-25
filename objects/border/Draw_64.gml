@@ -1,10 +1,12 @@
-if keyboard_check_pressed(vk_f4) {	
+if keyboard_check_pressed(vk_f4) or (on_controller() and gamepad_button_check_pressed(gpad._gpad,gp_select)) {	
 	window_set_fullscreen(!window_get_fullscreen())
 	
 	ini_open("config.ini")
 		save_file(window_get_fullscreen(),"fScreen",,,"config.ini")
 	ini_close()
 }
+
+draw_spr(bo_simple,,-160,-30,0.5,0.5,,c_black,1)
 
 var e = cur_b > max_b
 var howf = 0
@@ -16,6 +18,14 @@ for (var i = 0;i < 2;i++) {spr[i] = asset_get_index("bo_" + string_lower(global.
 if cur_b != 0 and window_get_fullscreen() {
 	draw_spr(bo_simple,,-160,-30,0.5,0.5,,c_black,1)
 	
+	var bs = 1
+	if sprite_get_height(spr[e]) = 1080 {bs = 0.5}
+	
+	var _f = 0
+
+	if img[0] < img[1] {_f = 1}
+	if img[0] > img[1] {_f = -1}
+
 	for (var i = 0;i < 2;i++) {	
 		var _a = 1
 		if i {_a = a}
@@ -34,14 +44,6 @@ if cur_b != 0 and window_get_fullscreen() {
 			}
 
 			draw_spr(bo_simple,fr[i],-160,-30,0.5,0.5,,merge_color(c_white,c_black,img[i] = -2),_a)
-			
-			if window_get_height() = 768 {
-				draw_set_color(merge_color(c_white,c_black,img[i] = -2))
-				draw_set_alpha(1)
-				draw_line(x + 799.5,y + 30,x + 799.5,y + 511.5)
-				draw_line(x + 157.5,y + 512,x + 800,y + 512)
-				draw_set_alpha(1)
-			}
 		}
 		else {
 			if img[i] = 0 and !e {
@@ -60,12 +62,13 @@ if cur_b != 0 and window_get_fullscreen() {
 				}
 			}
 			else {
-				if sprite_exists(spr[e]) {
-					var bs = 1
-					if sprite_get_height(spr[e]) = 1080 {bs = 0.5}
-					draw_spr(spr[e],img[i] - 1,-160,-30,bs,bs,,,_a)
-				}
+				if sprite_exists(spr[e]) {draw_spr(spr[e],img[i] - 1,-160,-30,bs,bs,,,_a)}
 			}
 		}
+	}
+
+	if global.debug and display.d {
+		draw_font(1)
+		draw_txt_outline(4,-14,string(img) + ", " + string(_f),c_white,,,,,1,1)
 	}
 }

@@ -12,21 +12,21 @@ else {limit = array_length(m) - 1}
 var oWorld = i_exists(o_mainchara)
 
 var _m = m[cur_m]
+var portchars = ["Toriel"]
+var port = array_contains(portchars,c[cur_m])
 
 switch preset {
 	case 0:
 		var yy = 320
-		
+
 		if oWorld and pos != 1 {yy = 320 - (310 * (o_mainchara.y >= (camera_get_view_y(view_camera[0]) + 120) or (pos = 2)))}
 
 		y = yy + 28
-		x = 58
-		
-		if c[cur_m] != "" {x = 176}
-		
+		x = 58 + (118 * port)
+
 		draw_box(32,yy,609,yy + 151,,,,,dw)
 	break
-	
+
 	case 1:
 		length = string_length(m[cur_m])
 		skip = 0
@@ -34,7 +34,7 @@ switch preset {
 		snd = no_sound
 		d = 0
 	break
-	
+
 	case 2:
 		d_col = c_black
 		
@@ -91,6 +91,8 @@ if !d {
 	var halt = 1
 	var talk_sp = 0.25
 	var d_snd = snd
+	var s_reset = 1
+	var rndpit = pit
 
 	if c[cur_m] != "" {
 		switch c[cur_m] {
@@ -141,7 +143,7 @@ if !d {
 		curchar = string_char_at(_m,i)
 		nchar[0] = string_char_at(_m,i + 1)
 		nchar[1] = string_char_at(_m,i + 2)
-		
+
 		switch nchar[0] {
 			case "~":
 				switch nchar[1] {
@@ -224,6 +226,19 @@ if !d {
 						col = c_dkgray
 						i += 2
 					break
+					
+					case "9":
+					case "8":
+					case "7":
+					case "6":
+					case "5":
+					case "4":
+					case "3":
+					case "2":
+					case "1":
+					case "0":
+						i += 2
+					break
 				}
 			break
 		
@@ -259,15 +274,22 @@ if !d {
 			break
 		
 			case "&":
-				if nchar[1] = "&" or nchar[1] = "2" {
-					_xx = 0
-					_yy += y_sep
-					if nchar[1] = "2" {_yy += y_sep}
-					i += 2
+				for (var i5 = 1;i5 < 10;i5++) {
+					if nchar[1] = "&" or nchar[1] = string(i5) {
+						_xx = 0
+						
+						var _break = nchar[1]
+						if nchar[1] = "&" {_break = 1}
+						
+						_yy += y_sep * _break
+
+						i += 2
+						break
+					}
 				}
 			break
 		}
-			
+
 		nchar[2] = string_char_at(_m,i + 1)
 		
 		if (nchar[2] = "*" or nchar[2] = "＊") and reset {
@@ -294,7 +316,7 @@ if !d {
 		}
 
 		if jumpy[i] {jumpy[i] -= jump_st / 2}
-		
+
 		ox = 0
 		oy = 0
 		so = timer[0] + i
@@ -302,17 +324,17 @@ if !d {
 		ang[i] = image_angle * (i + 1)
 
 		if m_ef[0] {
-			ox = random(rand_st) - (rand_st / 2)
-			oy = random(rand_st) - (rand_st / 2)
+			ox += random(rand_st) - (rand_st / 2)
+			oy += random(rand_st) - (rand_st / 2)
 		}
 
 		if m_ef[1] {oy -= sin(so * pi * 2 / 30) * 3}
-		
+
 		if m_ef[2] {
 			ox += sin(so * pi * 2 / 30) * 2
 			oy += cos(so * pi * 2 / 30) * 2
         }
-		
+
 		bopper_x = irandom_range(-tenbop,tenbop)
 		bopper_y = irandom_range(-tenbop,tenbop)
 		
@@ -334,15 +356,14 @@ if !d {
 		draw_font(fnt)
 		
 		if !him {
-			var col2
+			var col2 = col
 
 			if dw {
-				col2 = c_white
+				if !global.simpleVFX {col2 = c_white}
 				
 				if col = c_white or col = c_black {draw_txt_color(txt_x + 1,txt_y + 1,txt,txt_sx,txt_sy,ang[i],c_dkgray,c_dkgray,c_navy,c_navy,txt_a)}
 				else {draw_txt_color(txt_x + 1,txt_y + 1,txt,txt_sx,txt_sy,ang[i],col,col,col,col,txt_a * 0.3)}
 			}
-			else {col2 = col}
 			
 			draw_txt_color(txt_x,txt_y,txt,txt_sx,txt_sy,ang[i],col2,col2,col,col,txt_a)
 		}
@@ -360,53 +381,74 @@ if !d {
 		_xx = round(_xx)
 		_yy = round(_yy)
 	}
-
+		
+	if global.debug and ord_pressed("P") {dialsm_create(,,choose("Hello!","World!","Long\nText!"))}
+	
 	if draw {
 		cur_sp += (1 / adv)
-		
+
 		if cur_sp >= sp {
 			length += adv
 			cur_sp = 0
 			talk = 1
 
-			for (var q = 0;q < length;q++) {
-				nchar[3] = string_char_at(_m,q + 1)
-				nchar[4] = string_char_at(_m,q + 2)
-			}
-			
-			switch nchar[3] {
-				case "?":
-				case "!":
-				case ".":
-				case "？":
-				case "！":
-				case "。":
-				case "…":
-					if (nchar[4] != "." and nchar[4] != "!" and nchar[4] != "?" 
-					and nchar[4] != ")" and nchar[4] != "\"" and nchar[4] != "。" 
-					and nchar[4] != "！" and nchar[4] != "？") {
-						cur_sp -= 20
-						talk = 0
+			nchar[3] = string_char_at(_m,length)
+			nchar[4] = string_char_at(_m,length + 1)
+
+			for (var q = 1;q < 11;q++) {
+				if (nchar[3] = "&" and (nchar[4] = "&" or nchar[4] = string(q))) 
+				or (nchar[3] = "~" and (nchar[4] != string_lower(nchar[4]) or nchar[4] = "p" or nchar[4] = "g"))
+				or (nchar[3] = "^" and (nchar[4] != string_lower(nchar[4]) or nchar[4] = "w")) {
+					length += 2
+					break
+				}
+				
+				if nchar[3] != " " or (nchar[3] = "&" and nchar[4] != "&" and nchar[4] != string(q))
+				or (nchar[3] = "~" and nchar[4] != string(q - 1)) {
+					if s_reset {audio_stop(d_snd)}
+				
+					if m_ef[3] {rndpit += random_range(-0.2,0.2)}
+				
+					if (!s_reset and !audio_is_playing(d_snd)) or s_reset {
+						audio_play(d_snd,,,vol,,rndpit)	
+						talk = 1
 					}
-				break
-				
-				case "、":
-				case ",":
-					cur_sp -= 10
-					talk = 0
-				break
+					break
+				}
 			}
 			
-			if nchar[3] != " " and !(nchar[3] = "&" and (nchar[4] = "&" or nchar[4] = "2")) {
-				audio_stop(d_snd)
+			if auto_punc {
+				switch nchar[3] {
+					case "?":
+					case "!":
+					case ".":
+					case "？":
+					case "！":
+					case "。":
+					case "…":
+						if (nchar[4] != nchar[3]) 
+						and nchar[4] != ")" and nchar[4] != "\"" and nchar[4] != "]" 
+						and nchar[4] != "!" and nchar[4] != "?" and nchar[4] != "？"
+						and nchar[4] != "！" {
+							cur_sp -= 20
+							talk = 0
+						}
+					break
 				
-				var rndpit
-				
-				if m_ef[3] {rndpit = random_range(-0.2,0.2)}
-				else {rndpit = 0}
-				
-				audio_play(d_snd,,,vol,,pit + rndpit)
-				talk = 1
+					case "、":
+					case ",":
+						cur_sp -= 10
+						talk = 0
+					break
+				}
+			}
+			
+			for (var q = 0;q < 10;q++) {
+				if (string_char_at(_m,length - 1) = "~" and nchar[3] = string(q)) {
+					cur_sp -= real(nchar[3]) * 10
+					length += 2
+					talk = 0
+				}
 			}
 		}
 
@@ -422,8 +464,11 @@ if !d {
 				break
 			}
 		}
-		
-		if length >= string_length(_m) {draw = 0}
+
+		if length >= string_length(_m) {
+			length = string_length(_m)
+			draw = 0
+		}
 	}
 	else {
 		cur_sp = 0
@@ -444,19 +489,14 @@ if !d {
 			cur_m++
 			length = 0
 			draw = 1
-
-			talk = 0
-			talkfr = 0
-			ttalk = 0
 		}
-		else {
-			talk = 0
-			talkfr = 0
-			ttalk = 0
-
-			destroy()
-		}
+		else {destroy()}
+		
+		talk = 0
+		talkfr = 0
+		ttalk = 0
 	
+		destroy(dialsmall)
 		next_m = 0
 	}
 	
@@ -479,3 +519,24 @@ if !d {
 	}
 }
 else {d -= 0.5}
+
+if global.debug and display.d {
+	draw_font(1)
+
+	var dbst
+	dbst[0] = "Pos: " + string(x) + "," + string(y)
+	dbst[1] = "S: " + audio_get_name(snd) + ",V:" + string(vol) + ",P:" + string(pit) + ",F:" + string(fnt)
+	dbst[2] = "SP: " + string(sp) + ",CurSP:" + string(cur_sp) + ",T:" + string(talk) + ",AutoPunc:" + string(auto_punc)
+	dbst[3] = "L:" + string(length) + ",CurM:" + string(cur_m) + ",NextM:" + string(next_m) + ",LastM:" + string(last_m)
+	dbst[4] = "M:"
+
+	var db_y = y - (14 * array_length(dbst))
+
+	for (var i = 0;i < array_length(dbst);i++) {draw_txt_outline(x,db_y + (14 * i),dbst[i],global.color[0],,,,,1,1)}
+
+	for (var i = 1;i < string_length(m[cur_m]) + 1;i++) {draw_txt_outline((x + 16) + (8 * i),db_y + (14 * 4),string_char_at(m[cur_m],i),global.color[0],,,,,1,1)}
+	
+	if length {
+		for (var i = 0;i < adv;i++) {draw_txt_outline((x + 16) + (8 * length) + (8 * i),db_y + (14 * 4),string_char_at(m[cur_m],length + i),invert_color(global.color[0]),,,,,1,1)}
+	}
+}

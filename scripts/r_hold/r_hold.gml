@@ -8,7 +8,7 @@ function r_hold(){
 		var ch = g.dch
 
 		if ch != 1 and gamepad_button_check(con,gp_padr) {bt = 1}
-		if ch != 2 and gamepad_axis_value(con,gp_axislh) > 0 {bt = 1}
+		if ch != 2 and gamepad_axis_value(con,gp_axislh) > (0.5 + g.sens[2]) * os_type = os_linux {bt = 1}
 	}
 
 	return bt

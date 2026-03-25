@@ -90,7 +90,7 @@ switch global.gamemode {
 		var sc = 2 - l_check()
 
 		#region CONTROLS
-			if vk_hold(vk_escape) {quit++}
+			if vk_hold(vk_escape) or (on_controller() and gamepad_button_check(gpad._gpad,gp_start)) {quit++}
 			else {quit = 0}
 
 			if quit >= 20 {game_end()}

@@ -8,7 +8,12 @@ cur_b = 0
 max_b = 3
 max_ex = 3
 
-for (var i = 0;i < 2;i++) {img[i] = 0}
+for (var i = 0;i < 2;i++) {
+	img[i] = 0
+	trigger[i] = 0
+	timer[i] = 0
+}
+
 a = 0
 f = 0
 fspr = 0
@@ -16,7 +21,8 @@ ft = 0
 
 var _c = "config.ini"
 
-if file_exists(_c) {
+if is_deck() {window_set_fullscreen(1)}
+else if file_exists(_c) {
 	ini_open(_c)
 		window_set_fullscreen(ini_read_real(_c,"fScreen",0))
 	ini_close()

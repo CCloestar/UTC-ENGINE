@@ -19,6 +19,7 @@ fnt = 0
 
 sp = 1
 cur_sp = 0
+auto_punc = 1
 
 m[0] = "* error."
 cur_m = 0
@@ -29,7 +30,7 @@ last_m = -1
 preset = 0
 reset = 0
 spec = 0
-pos = 1
+pos = 0
 
 for (var i = 0;i < 64;i++) {
 	c[i] = ""
@@ -40,7 +41,7 @@ for (var i = 0;i < 64;i++) {
 }
 
 jump_st = 6
-rand_st = 1
+rand_st = 1 + global.inBattle
 
 d_col = c_white
 skip = 1

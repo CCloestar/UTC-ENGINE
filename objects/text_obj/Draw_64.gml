@@ -1,0 +1,1 @@
+draw_txt_obj(gui)

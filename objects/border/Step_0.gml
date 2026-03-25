@@ -29,33 +29,35 @@ var _c = global.soulfile
 
 if file_exists(_c) {
 	ini_open(_c)
-		howf = ini_read_real(string_lower(global.soul_name),"howfar",howf)
+		howf = ini_read_real(string_lower(global.soul_name),"f",howf)
 	ini_close()
 }
 
 switch global.curCh {
 	case 1:
-		if howf > 0 {max_b = 4}
-		if howf > 7 {max_b = 5}
-
-		if global.story[100] {ex = 1}
 	break
 }
 
 max_ex = max_b + ex
 
 switch cur_b {
-	case 2:
+	case 1:
 		img[0] = -1
 		img[1] = img[0]
 	break
 	
-	case 1:
+	case 2:
+		img[0] = 0
+		img[1] = img[0]
+	break
+	
+	case 3:
 		if img[0] != img[1] {
 			if a < 1 {a += force}
 			else {
-				img[0] = img[1]
+				reset_timers()
 				a = 0
+				img[0] = img[1]
 			}
 		}
 		else {a = 0}

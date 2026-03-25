@@ -20,7 +20,7 @@
 			if rKills - st > 0 {
 				pp = rKills / (rKills - st)
 				if pp > 8 {pp = 8}
-
+			
 				r_step = (r_st + irandom_range(1,r_amt)) * pp
 			}
 			else {
@@ -58,6 +58,7 @@ else {
 	draw_spr(caution,cautfr,x + 5,y - 9)
 	
 	if enc[1] {
+		_dep = 0
 		depth = globals.depth - 10000
 		draw_set_color(c_black)
 		draw_rectangle(-10,-10,room_width + 10,room_height + 10,0)
@@ -145,14 +146,17 @@ if global.debug and display.d {
 	draw_hitbox()
 
 	var o
-	o[0] = x
-	o[1] = y
-	o[2] = depth
+	o[0,0] = x
+	o[0,1] = y
+	o[0,2] = depth
+	o[1,0] = o_camera.x
+	o[1,1] = o_camera.y
 
 	var db
-	db[0] = "Pos: " + string(o)
+	db[0] = "Pos: " + string(o[0])
 	db[1] = "Steps: " + string(step)
 	db[2] = "R.Steps: " + string(r_step)
+	db[3] = "o_camera Pos: " + string(o[1])
 
 	draw_font(1)
 	

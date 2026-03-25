@@ -19,7 +19,7 @@ if file_exists(global.filename) {
 		hasCell = ini_read_real("savefile","st_100",0)
 	ini_close()
 }
-	
+
 if file_exists(global.soulfile) {
 	ini_open(global.soulfile)
 		att = ini_read_real(string_lower(global.soul_name),"h_a",0)
@@ -263,7 +263,9 @@ switch inMenu {
 			switch global.gamemode {
 				default:
 					var igname = 0
-
+				
+					if global.curCh = 1 {igname = 1}
+				
 					if string_length(global.pname) > 6 and !igname {
 						var jsc = 2 - l_check()
 							
@@ -341,18 +343,16 @@ switch inMenu {
 				with (md) {
 					if !cur_m {
 						if !draw {
-							if vol = 1 {
+							if !last_m {
 								audio_play(call_1)
 								music_pause()
-
-								vol = 0
+								last_m = 1
 							}
 							else {
 								if !audio_is_playing(call_1) {
 									music_resume()
 									finish = 1
 									auto = 1
-									vol = 1
 								}
 							}
 						}

@@ -2,7 +2,7 @@ image_alpha += alphaValue
 musicFadeOut -= alphaValue
 
 draw_set_alpha(image_alpha)
-draw_set_color(c_black)
+draw_set_color(color)
 draw_rectangle(-2,-2,642,482,0)
 draw_set_alpha(1)
 
@@ -14,7 +14,10 @@ if (global.m_name[1] != global.m_name[2] and global.m_name[1] != global.tooMuch 
 global.pitch = p
 
 if image_alpha >= 1 {
-	if global.next_play {music_stop()}
+	if global.next_play {
+		music_set_volume(,0)
+		music_stop()
+	}
 	
 	global.fplay = 1
 	

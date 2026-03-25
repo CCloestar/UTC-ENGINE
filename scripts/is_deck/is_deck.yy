@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"is_deck",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_deck",
+  "parent":{
+    "name":"files",
+    "path":"folders/Scripts/files.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

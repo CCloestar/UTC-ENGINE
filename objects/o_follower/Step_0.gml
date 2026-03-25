@@ -48,12 +48,22 @@ if !c {
 		}
 	}	
 }
-	
+
 if global.debug {
 	if vk_hold(vk_shift) {
 		if c_pressed() {
 			if !c {c = 1}
 			else {move_obj()}
 		}
+	}
+}
+
+if _alp != 0 {
+	var _res = (_alp > 0)
+
+	if image_alpha != _res {image_alpha += _alp * 0.1}
+	else {
+		image_alpha = _res
+		_alp = 0
 	}
 }

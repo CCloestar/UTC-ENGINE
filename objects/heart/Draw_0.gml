@@ -485,13 +485,13 @@ draw_hitbox()
 if global.debug and display.d {
 	var dx = (x + sprite_width) + 10
 	var sc = 1
-	var sp = 16
+	var spa = 16
 
 	draw_font(1,0)
 	draw_txt_outline(dx,y,string(s_timer),c_white,,,,,sc,sc)
-	draw_txt_outline(dx,y + sp,string(s_trigger),c_white,,,,,sc,sc)
-	draw_txt_outline(dx,y + (sp * 2),"MODE: " + string(mode),c_white,,,,,sc,sc)
-	draw_txt_outline(dx,y + (sp * 3),"TP: " + string(global.tp),c_white,,,,,sc,sc)
+	draw_txt_outline(dx,y + spa,string(s_trigger),c_white,,,,,sc,sc)
+	draw_txt_outline(dx,y + (spa * 2),"MODE: " + string(mode),c_white,,,,,sc,sc)
+	draw_txt_outline(dx,y + (spa * 3),"TP: " + string(global.tp),c_white,,,,,sc,sc)
 }
 
 function soul_move(axis = 0,sped = sp) {

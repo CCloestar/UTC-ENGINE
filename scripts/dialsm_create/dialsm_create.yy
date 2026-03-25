@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"dialsm_create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dialsm_create",
+  "parent":{
+    "name":"dialogue",
+    "path":"folders/Scripts/cutscene/general/dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

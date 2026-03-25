@@ -8,5 +8,6 @@ function reset_gpad() {
 
 		sens[0] = 0.15
 		sens[1] = 0.01
+		sens[2] = sens[0] * 0.5
 	}
 }

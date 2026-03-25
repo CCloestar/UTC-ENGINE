@@ -10,7 +10,13 @@ gameoverer(xx,yy)
 if global.debug and vk_hold(vk_shift) {
 	if ord_pressed("B") {i_create(x + 40,,,o_box)}
 	if ord_pressed("S") {i_create(,y + 40,,o_save)}
-	if ord_pressed("P") {p = i_create(x - 40,y,,o_pickup)}
+	if ord_pressed("P") {
+		var sp
+		sp[0] =	toyknife
+		
+		p = i_create(x - 40,y,,o_pickup)
+		p.sprite_index = sp[irandom(array_length(sp) - 1)] 
+	}
 	
 	var d_names = "Null"
 
@@ -22,18 +28,7 @@ if global.debug and vk_hold(vk_shift) {
 
 if !c {
 	var sp,col
-	
-	vol += 0.2
-	
-	music_set_volume(,vol)
 
-	if vol >= 1 {
-		vol = 1
-		music_set_volume(,vol)
-		global.battled = 0
-		global.next_play = 0
-	}
-	
 	if !dir_hold() {w = 0}
 	
 	solids = [
@@ -163,14 +158,30 @@ if !c {
 
 	if c_pressed() {
 		audio_play(click)
-		delay = 1
 		char_stop()
+		delay = 1
 		inMenu = 1
 	}
 }
-	
-if enc[1] {depth = globals.depth - 10000}
-if depth > globals.depth {depth = 1 - ((y * 10) + (sprite_height * 10))}
+
+if enc[1] {
+	depth = globals.depth - 10000
+	_dep = 0
+}
+
+if _dep {depth = 1 - ((y * 10) + (sprite_height * 10))}
+
+if _vol {
+	_v += 0.2
+	music_set_volume(,_v)
+
+	if _v >= 1 {
+		music_set_volume(,1)
+		global.battled = 0
+		_vol = 0
+		_v = 0
+	}
+}
 
 function c_colcheck(col = 0,_sp = 3) {
 	var spa,turn,xAdd,yAdd

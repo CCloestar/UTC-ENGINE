@@ -23,7 +23,8 @@ if file_exists(_c) {
 
 if !cuts {destroy()}
 
-scr = "c_" + room_get_name(room) + "_" + string_lower(global.curCh)
-c = asset_get_index(scr)
+scr[0] = "c_" + room_get_name(room) + "_" + string_lower(global.curCh)
+scr[1] = "c_rm_battle_" + string_lower(global.bstory) + "_" + string_lower(global.curCh)
 
+c = asset_get_index(scr[global.inBattle])
 if script_exists(c) {script_execute(c)}

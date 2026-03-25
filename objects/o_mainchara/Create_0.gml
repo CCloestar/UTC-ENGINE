@@ -6,6 +6,9 @@ global.bstory = 0
 c = 0
 f = 0
 w = 0
+_dep = 1
+_vol = 0
+_v = 0
 
 r = 0
 rt = 0
@@ -50,15 +53,17 @@ if !(global.debug and !global.fplay) {
 	f = global.F
 }
 
-vol = !global.battled
-
 if global.next_play {
-	music_play(global.m_name[2],vol)
+	music_play(global.m_name[2])
 	global.m_name[2] = "no_sound"
+	global.next_play = 0
 }
 
-if global.battled {music_resume()}
-music_set_volume(,vol)
+if global.battled {
+	music_set_volume(,0)
+	music_resume()
+	_vol = 1
+}
 
 if global.fplay {fade(1)}
 
