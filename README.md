@@ -28,18 +28,6 @@ Examples:
 
 <img width="340" height="60" alt="image" src="https://github.com/user-attachments/assets/57dc2ae8-d993-41a1-9384-0157e6c701e4" />
 
-### **NOT 1:1 Japanese font**:
-
-This framework also features language support, although it has some flaws if we are talking about the JAPANESE Font.
-All of the fonts in this Engine were made using Gamemaker 2's bitmap fonts feature, so it doesn't support kerning on fonts.
-- You can see the difference between these 2 screenshots from the instructions menu, from UTC and UT respectively:
-
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/1865ca4d-c099-482c-9cf4-70bbfa444aba" />
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/88c0d8d6-af31-4849-a75a-b9a734766cbf" />
-
-The difference is so small, you might not even notice at first glance.
-If this doesn't concern you, then... uhm... You just learned something!
-
 # And that's all!
 
 <img width="116" height="132" alt="image" src="https://github.com/user-attachments/assets/d2fcdb8a-8606-415c-858b-6c984ebce1a6" />
