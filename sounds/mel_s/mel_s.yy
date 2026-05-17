@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mel_s",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.44408163,
+  "exportDir":"",
+  "name":"mel_s",
+  "parent":{
+    "name":"extra",
+    "path":"folders/Sounds/sfx/dialogues/extra.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"mel_s.ogg",
+  "volume":1.0,
+}

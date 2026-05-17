@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"_mouse",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"_mouse",
+  "parent":{
+    "name":"keyboard",
+    "path":"folders/Scripts/keyboard.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

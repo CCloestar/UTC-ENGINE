@@ -1,0 +1,1 @@
+txt = "g_story0"

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"_room",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"_room",
+  "parent":{
+    "name":"room",
+    "path":"folders/Scripts/room.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"en_death",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.1533333,
+  "exportDir":"",
+  "name":"en_death",
+  "parent":{
+    "name":"battle",
+    "path":"folders/Sounds/sfx/battle.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"en_death.ogg",
+  "volume":1.0,
+}

@@ -1,0 +1,42 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ruins_tiles",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":16,
+    "SerialiseWidth":9,
+    "TileCompressedData":[
+      -9,0,1,135,-8,0,1,135,-8,0,4,135,0,200,200,-5,0,4,135,0,200,200,-5,0,4,135,0,200,200,-5,0,1,135,-8,0,
+      1,135,-8,0,1,135,-8,0,1,135,-8,0,1,135,-8,0,1,135,-8,0,1,135,-8,0,1,135,-8,0,1,135,-8,0,1,135,-8,0,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"ruins_tiles",
+  "out_columns":16,
+  "out_tilehborder":0,
+  "out_tilevborder":0,
+  "parent":{
+    "name":"Conjuntos de tiles",
+    "path":"folders/Conjuntos de tiles.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"ruins",
+    "path":"sprites/ruins/ruins.yy",
+  },
+  "spriteNoExport":true,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":20,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":20,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":250,
+}

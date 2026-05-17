@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"c_rm_gardens3_1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_rm_gardens3_1",
+  "parent":{
+    "name":"gardens",
+    "path":"folders/Scripts/cutscene/gardens.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

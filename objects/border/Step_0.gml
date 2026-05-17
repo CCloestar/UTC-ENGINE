@@ -1,0 +1,108 @@
+var e = cur_b > max_b
+var howf = 0
+var ex = 0
+var c = o_mainchara
+var cuts = o_cutscene
+
+var spr
+for (var i = 0;i < 2;i++) {spr[i] = a_index($"bo_{str_l(global.soul_name)}_{i}_{global.gamemode}")}
+
+if img[0] = 0 and !e and a = 0 {
+	if !(dir_hold() or z_hold() or x_hold() or c_hold()) {f++}
+	else {f = 0}
+
+	if f >= 300000 / (1 + (29999 * global.debug)) {
+		ft++
+
+		if ft % 3 == 0 {fspr++}
+		if fspr > 2 {fspr = 0}
+	}
+}
+else {f = 0}
+
+if !f {
+	ft = 0
+	fspr = 0
+}
+
+var _c = global.soulfile
+
+if f_exists(_c) {
+	ini_open(_c)
+		howf = load_real("f",howf,str_l(global.soul_name))
+	ini_close()
+}
+
+max_ex = max_b + ex
+
+switch cur_b {
+	case 1:
+		img[0] = -1
+		img[1] = img[0]
+	break
+
+	case 2:
+		img[0] = 0
+		img[1] = img[0]
+	break
+
+	case 3:
+		if img[0] != img[1] {
+			if a < 1 {a += force}
+			else {
+				timers_reset()
+				a = 0
+				img[0] = img[1]
+			}
+		}
+		else {a = 0}
+
+		if a = 0 and img[0] = img[1] {
+			/*
+				img[0] = current image
+				img[1] = next image
+				img[i] = both images
+				if img[0] isnt img[1], it will fade to img[1]!
+				if img[i] is set, it will instantly change both.
+			*/
+			
+			for (var i = 0; i < 2;i++) {
+				switch room {
+					default:
+						img[1] = img[0]
+					break
+
+					case rm_select:
+					case rm_title:
+						img[i] = -1
+					break
+
+					case rm_intro:
+						if intro.s_alp > 0 {img[1] = -1}
+						else {img[i] = 0}
+					break
+
+					case rm_hole0:
+						img[i] = 1
+					break
+				}
+			}
+		}
+
+		if img[0] = img[1] {a = 0}
+
+		if global.debug and ord_hold("B") {
+			if img[1] > -2 {img[1] -= l_pressed()}
+			img[1] += r_pressed()
+		}
+	break
+
+	default:
+		img[0] = cur_b - 3
+
+		if e {img[0] = cur_b - (3 + spr_num(spr[1]))}
+		img[1] = img[0]
+	break
+}
+
+if cur_b > max_ex {cur_b = 0}

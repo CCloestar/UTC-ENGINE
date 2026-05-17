@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"_release",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"_release",
+  "parent":{
+    "name":"keyboard",
+    "path":"folders/Scripts/keyboard.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

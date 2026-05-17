@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"_gameover",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"_gameover",
+  "parent":{
+    "name":"room",
+    "path":"folders/Scripts/room.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

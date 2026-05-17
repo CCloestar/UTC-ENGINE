@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"ant_s",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.66022915,
+  "exportDir":"",
+  "name":"ant_s",
+  "parent":{
+    "name":"extra",
+    "path":"folders/Sounds/sfx/dialogues/extra.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"ant_s.ogg",
+  "volume":1.0,
+}

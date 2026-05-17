@@ -1,0 +1,1 @@
+draw_spr(,,x - (sprite_width / 2),y - (sprite_height / 2),,,,0.3 * in_debug())

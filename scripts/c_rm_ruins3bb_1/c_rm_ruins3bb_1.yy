@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"c_rm_ruins3bb_1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_rm_ruins3bb_1",
+  "parent":{
+    "name":"ruins",
+    "path":"folders/Scripts/cutscene/ruins.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

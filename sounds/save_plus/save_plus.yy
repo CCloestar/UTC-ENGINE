@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"save_plus",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.5485625,
+  "exportDir":"",
+  "name":"save_plus",
+  "parent":{
+    "name":"menu",
+    "path":"folders/Sounds/sfx/menu.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"save_plus.ogg",
+  "volume":1.0,
+}

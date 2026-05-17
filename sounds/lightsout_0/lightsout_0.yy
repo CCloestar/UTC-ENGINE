@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"lightsout_0",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.5078912,
+  "exportDir":"",
+  "name":"lightsout_0",
+  "parent":{
+    "name":"effects",
+    "path":"folders/Sounds/sfx/effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"lightsout_0.ogg",
+  "volume":1.0,
+}

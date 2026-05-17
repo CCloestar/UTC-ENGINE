@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"_follow_cuts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"_follow_cuts",
+  "parent":{
+    "name":"follower",
+    "path":"folders/Scripts/follower.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"squeak",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.06095238,
+  "exportDir":"",
+  "name":"squeak",
+  "parent":{
+    "name":"effects",
+    "path":"folders/Sounds/sfx/effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"squeak.ogg",
+  "volume":1.0,
+}

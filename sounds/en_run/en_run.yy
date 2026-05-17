@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"en_run",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.1463718,
+  "exportDir":"",
+  "name":"en_run",
+  "parent":{
+    "name":"battle",
+    "path":"folders/Sounds/sfx/battle.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"en_run.ogg",
+  "volume":1.0,
+}
