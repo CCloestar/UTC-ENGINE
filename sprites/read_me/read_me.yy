@@ -2,10 +2,17 @@
   "$GMSprite":"v2",
   "%Name":"read_me",
   "bboxMode":2,
+<<<<<<< HEAD
   "bbox_bottom":18,
   "bbox_left":2,
   "bbox_right":17,
   "bbox_top":15,
+=======
+  "bbox_bottom":20,
+  "bbox_left":2,
+  "bbox_right":17,
+  "bbox_top":17,
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,17 +23,28 @@
   ],
   "gridX":0,
   "gridY":0,
+<<<<<<< HEAD
   "height":20,
+=======
+  "height":22,
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"68b7bfd6-7e23-4ae4-8825-ce70aeb242cd","blendMode":0,"displayName":"default","isLocked":false,"name":"68b7bfd6-7e23-4ae4-8825-ce70aeb242cd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"read_me",
   "nineSlice":null,
+<<<<<<< HEAD
   "origin":0,
   "parent":{
     "name":"scenery",
     "path":"folders/Sprites/scenery.yy",
+=======
+  "origin":9,
+  "parent":{
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -78,7 +96,11 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
+<<<<<<< HEAD
     "yorigin":0,
+=======
+    "yorigin":2,
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   },
   "swatchColours":null,
   "swfPrecision":2.525,

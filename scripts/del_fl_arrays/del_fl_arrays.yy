@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"del_fl_arrays",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"del_fl_arrays",
+  "parent":{
+    "name":"files",
+    "path":"folders/Scripts/files.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

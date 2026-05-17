@@ -12,14 +12,22 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
+<<<<<<< HEAD
     {"$GMSpriteFrame":"v1","%Name":"5f1303d0-967a-4017-8e6c-5ed414d80819","name":"5f1303d0-967a-4017-8e6c-5ed414d80819","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+=======
+    {"$GMSpriteFrame":"v1","%Name":"04ca6d93-6007-450c-b47e-f906ef1689ab","name":"04ca6d93-6007-450c-b47e-f906ef1689ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   ],
   "gridX":0,
   "gridY":0,
   "height":130,
   "HTile":false,
   "layers":[
+<<<<<<< HEAD
     {"$GMImageLayer":"","%Name":"95de5f32-3d0b-46f5-b13a-3a0e53cc0f1f","blendMode":0,"displayName":"default","isLocked":false,"name":"95de5f32-3d0b-46f5-b13a-3a0e53cc0f1f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+=======
+    {"$GMImageLayer":"","%Name":"cb4dd0a5-20b5-4f04-8275-dbdabcbe88c4","blendMode":0,"displayName":"default","isLocked":false,"name":"cb4dd0a5-20b5-4f04-8275-dbdabcbe88c4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   ],
   "name":"fbo_7",
   "nineSlice":null,
@@ -71,8 +79,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+<<<<<<< HEAD
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5f1303d0-967a-4017-8e6c-5ed414d80819","path":"sprites/fbo_7/fbo_7.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"caae8b0e-3d55-4ba9-ae20-4c58d89121a9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+=======
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"04ca6d93-6007-450c-b47e-f906ef1689ab","path":"sprites/fbo_7/fbo_7.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e31e7e4f-9e21-41cf-ac40-194bc2613b8d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

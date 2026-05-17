@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"audio_play_echo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"audio_play_echo",
+  "parent":{
+    "name":"sfx",
+    "path":"folders/Scripts/audio/sfx.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

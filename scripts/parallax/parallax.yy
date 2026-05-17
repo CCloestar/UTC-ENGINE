@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"parallax",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"parallax",
+  "parent":{
+    "name":"effects",
+    "path":"folders/Scripts/effects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

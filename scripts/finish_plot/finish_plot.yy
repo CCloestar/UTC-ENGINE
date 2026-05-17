@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"finish_plot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"finish_plot",
+  "parent":{
+    "name":"cutscene",
+    "path":"folders/Scripts/cutscene.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

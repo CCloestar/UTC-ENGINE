@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"audio_free",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"audio_free",
+  "parent":{
+    "name":"sfx",
+    "path":"folders/Scripts/audio/sfx.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

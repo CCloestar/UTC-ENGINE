@@ -3,6 +3,7 @@
   "%Name":"operagx",
   "name":"operagx",
   "option_operagx_display_cursor":true,
+<<<<<<< HEAD
   "option_operagx_editUrl":"https://dev.gx.games/games/a9dfd37f-eb4f-4bb8-afd3-c44dfd442869/details",
   "option_operagx_game_name":"Made with UTC Engine (Web)",
   "option_operagx_guid":"",
@@ -10,6 +11,15 @@
   "option_operagx_interpolate_pixels":false,
   "option_operagx_mod_editUrl":"",
   "option_operagx_mod_game_name":"UNDERTALE CYAN",
+=======
+  "option_operagx_editUrl":"",
+  "option_operagx_game_name":"${project_name}",
+  "option_operagx_guid":"",
+  "option_operagx_internalShareUrl":"",
+  "option_operagx_interpolate_pixels":true,
+  "option_operagx_mod_editUrl":"",
+  "option_operagx_mod_game_name":"${project_name}",
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "option_operagx_mod_guid":"",
   "option_operagx_mod_internalShareUrl":"",
   "option_operagx_mod_next_version":"1.0.0.0",
@@ -20,11 +30,19 @@
   "option_operagx_next_version":"1.0.0.0",
   "option_operagx_publicShareUrl":"",
   "option_operagx_scale":0,
+<<<<<<< HEAD
   "option_operagx_team_id":"f0ad1f73-5172-4b04-a17c-7bcdaa348750",
   "option_operagx_team_name":"NeatPuppy studio",
   "option_operagx_texture_page":"2048x2048",
   "option_operagx_transparent_background":true,
   "option_operagx_version":"0.0.0.0",
+=======
+  "option_operagx_team_id":"",
+  "option_operagx_team_name":"",
+  "option_operagx_texture_page":"2048x2048",
+  "option_operagx_transparent_background":false,
+  "option_operagx_version":"1.0.0.0",
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "resourceType":"GMOperaGXOptions",
   "resourceVersion":"2.0",
 }

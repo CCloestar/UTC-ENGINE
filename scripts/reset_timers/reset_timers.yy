@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"reset_timers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"reset_timers",
+  "parent":{
+    "name":"cutscene",
+    "path":"folders/Scripts/cutscene.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

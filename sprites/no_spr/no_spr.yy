@@ -25,8 +25,13 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
+<<<<<<< HEAD
     "name":"debug",
     "path":"folders/Sprites/debug.yy",
+=======
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"array_highest",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_highest",
+  "parent":{
+    "name":"files",
+    "path":"folders/Scripts/files.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

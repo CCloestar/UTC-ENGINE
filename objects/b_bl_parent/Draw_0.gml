@@ -11,13 +11,21 @@ if heartshot {
 			hp -= dmg
 		break
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	heartshot = 0
 }
 
 function draw_bullet(inBoard = 0){
 	//i aint gonna repeat the code several times bcus of the drawing inside board system nope
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	var h = heart
 	var bo = board
 
@@ -38,7 +46,11 @@ function draw_bullet(inBoard = 0){
 			if tt {t += tt}
 			if ww {wi -= ww}
 			if hh {he -= hh}
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 			wi = round(wi)
 			he = round(he)
 			l = round(l)
@@ -57,13 +69,21 @@ function draw_bullet(inBoard = 0){
 		}
 	}
 	else {
+<<<<<<< HEAD
 		audio_play(bomb,,,0.7,,rnd_r(1.1,1.3))
 		scr_execute($"{bull}_death")
+=======
+		audio_play(bomb,,,0.7,,random_range(1.1,1.3))
+
+		//this is where you make your custom particles btw, good luck!
+
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 		destroy()
 	}
 }
 	
 function at_stylecode(){
+<<<<<<< HEAD
 	var col = {
 		"-1": #D3D1D1,
 		"0": c_white,
@@ -75,4 +95,32 @@ function at_stylecode(){
 
 	image_blend = col[$ str(at_style)] ?? "0"
 	if at_style = 3 and global.hard = 2 {destroy()}
+=======
+	switch at_style {
+		case -1:
+			image_blend = #D3D1D1
+		break
+
+		case 0:
+			image_blend = c_white
+		break
+	
+		case 1:
+			image_blend = #00A2E8
+		break
+	
+		case 2:
+			image_blend = #FCA600
+		break
+	
+		case 3:
+			image_blend = #40FF40
+			if global.hard = 2 {destroy()}
+		break
+	
+		case 4:
+			image_blend = c_red
+		break
+	}
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 }

@@ -4,7 +4,11 @@
   "name":"Main",
   "option_allow_instance_change":true,
   "option_audio_error_behaviour":true,
+<<<<<<< HEAD
   "option_author":"NeatPuppy",
+=======
+  "option_author":"Cloves Cloestar",
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "option_collision_compatibility":false,
   "option_copy_on_write_enabled":false,
   "option_draw_colour":4294967295,

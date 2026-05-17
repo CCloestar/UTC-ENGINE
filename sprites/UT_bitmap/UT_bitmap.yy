@@ -290,5 +290,9 @@
   },
   "type":0,
   "VTile":false,
+<<<<<<< HEAD
   "width":72,
+=======
+  "width":78,
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fade",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fade",
+  "parent":{
+    "name":"effects",
+    "path":"folders/Scripts/effects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

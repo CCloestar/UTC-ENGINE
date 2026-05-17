@@ -25,8 +25,13 @@ curCall = 0
 delay = 0
 dance = 0
 
+<<<<<<< HEAD
 dw = dw_check()
 draw_spr_c()
+=======
+load_d_dw()
+chara_spr()
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 step = 0
 r_step = 0
@@ -55,12 +60,20 @@ if !(global.debug and !global.fplay) {
 
 if global.next_play {
 	music_play(global.m_name[2])
+<<<<<<< HEAD
 	global.m_name[2] = ""
+=======
+	global.m_name[2] = "no_sound"
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	global.next_play = 0
 }
 
 if global.battled {
+<<<<<<< HEAD
 	music_vol(,0)
+=======
+	music_set_volume(,0)
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	music_resume()
 	_vol = 1
 }

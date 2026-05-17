@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cam_get_width",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cam_get_width",
+  "parent":{
+    "name":"camera",
+    "path":"folders/Scripts/cutscene/general/camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

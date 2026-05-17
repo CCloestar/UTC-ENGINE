@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fl_dial",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fl_dial",
+  "parent":{
+    "name":"follower",
+    "path":"folders/Scripts/follower.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

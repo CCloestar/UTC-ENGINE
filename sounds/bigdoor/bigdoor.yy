@@ -10,7 +10,11 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
+<<<<<<< HEAD
   "duration":1.4687709,
+=======
+  "duration":1.4687529,
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "exportDir":"",
   "name":"bigdoor",
   "parent":{

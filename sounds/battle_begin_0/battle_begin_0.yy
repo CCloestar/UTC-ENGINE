@@ -10,7 +10,11 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
+<<<<<<< HEAD
   "duration":0.06314583,
+=======
+  "duration":0.06312925,
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "exportDir":"",
   "name":"battle_begin_0",
   "parent":{

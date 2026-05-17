@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"load_d_dw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"load_d_dw",
+  "parent":{
+    "name":"effects",
+    "path":"folders/Scripts/effects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

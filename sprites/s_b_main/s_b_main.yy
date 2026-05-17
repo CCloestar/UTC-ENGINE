@@ -25,8 +25,13 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
+<<<<<<< HEAD
     "name":"test rabbit",
     "path":"folders/Sprites/shop/shopkeepers/test rabbit.yy",
+=======
+    "name":"shopkeepers",
+    "path":"folders/Sprites/shop/shopkeepers.yy",
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

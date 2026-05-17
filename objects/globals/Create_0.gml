@@ -1,14 +1,25 @@
 global.scrSC = 1
 global.scrSHOT = -1
+<<<<<<< HEAD
 if variable_global_exists("buff") {buffer_delete(global.buff)}
 global.buff = buffer_create(1048576,buffer_fixed,1)
+=======
+if !variable_global_exists("buff") {global.buff = buffer_create(1048576,buffer_fixed,1)}
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 //player
 global.debug = 0
 global.showcol = 0
 global.inBeta = 0
 global.pname = ""
+<<<<<<< HEAD
 global.soul_name = "NULL"
+=======
+global.changeName = 1
+global.soul_name = "NULL"
+global.canRun = 0
+global.hasLmode = 0
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 global.lv = 1
 global.skin = 0
 global.tp = 0
@@ -55,8 +66,13 @@ global.route = 0 // 0 is pacifist, 1 is neutral and its variants, 2 is genocide
 global.area = 0 //checks if its ruins themed, or other stages themed yknow
 
 for (var musics = 0;musics < 3;musics++) {
+<<<<<<< HEAD
 	global.music[musics] = -1 //0 = previous, 1 = current,2 = next
 	global.m_name[musics] = ""
+=======
+	global.music[musics] = no_sound //0 = previous, 1 = current,2 = next
+	global.m_name[musics] = "no_sound"
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 }
 
 global.next_play = 0
@@ -68,12 +84,17 @@ global.autoRUN = 0
 global.lmode = 0
 global.s_vol = 1
 global.m_vol = 1
+<<<<<<< HEAD
 global.lang = -1
+=======
+global.lang = 0
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 reset_keys()
 
 global.time = 0
 global.roomName = "--"
 
+<<<<<<< HEAD
 global.inBattle = 0
 global.battled = 0
 global.bstory = 0
@@ -81,6 +102,16 @@ global.en_r = 0
 
 global.choice = -1
 
+=======
+global.inBattle = 1
+global.battled = 0
+global.bstory = 0
+
+global.choice = -1
+
+global.enAmt = 1
+
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 for (var i = 0;i < 13;i++) {
 	for (var o = 0;o < 6;o++) {global.item[i,o] = ""}
 	for (var o = 0;o < 2;o++) {global.box[i,o] = ""}
@@ -90,17 +121,24 @@ for (var st = 0;st < 128;st++) {global.story[st] = 0}
 global.howfar = 0
 
 global.lay = 0
+<<<<<<< HEAD
 
 global.shop_id = 0
 global.date_id = 0
+=======
+global.shop_id = 0
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 global.noclip = 0
 
 global.gamemode = 0
+<<<<<<< HEAD
 global.changeName = 1
 global.canRun = 0
 global.hasLmode = 0
 
+=======
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 global.world = 0 //0 = LIGHT; 1 = DARK;etc...
 if !variable_global_exists("curCh") {global.curCh = 1}
 if !i_exists(gpad) {i_create(,,,gpad)}
@@ -109,6 +147,7 @@ global.hard = 0
 global.fun = 0
 global.init = 0
 
+<<<<<<< HEAD
 if !i_exists(touchpad) {
 	i_create(,,depth - 20,touchpad)
 	if is_web() {
@@ -141,6 +180,30 @@ if f_exists(_c) {
 		for (var i = 0;i < arlen(global.story);i++) {
 			global.story[i] = load_real($"st_{i}",global.story[i],_c)
 			global.story[i] = load_real($"dvu_{i}",global.story[i],_c)
+=======
+var _c = "config.ini"
+
+if file_exists(_c) {
+	ini_open(_c)
+		global.autoRUN = ini_read_real(_c,"autoRUN",0)
+		global.simpleVFX = ini_read_real(_c,"simpleVFX",0)
+		global.s_vol = ini_read_real(_c,"s_vol",1)
+		global.m_vol = ini_read_real(_c,"m_vol",1)
+		global.lang = ini_read_real(_c,"lang",0)
+		global.debug = ini_read_real(_c,"debug",0)
+		global.showcol = ini_read_real(_c,"showcol",0)
+		global.inBeta = ini_read_real(_c,"beta",0)
+		global.bstory = ini_read_real(_c,"bstory",0)
+		global.gamemode = ini_read_real(_c,"gmode",0)
+		global.world = ini_read_real(_c,"world",global.world)
+		global.area = ini_read_real(_c,"a",global.area)
+		global.hard = ini_read_real(_c,"hard",global.hard)
+		global.init = ini_read_real(_c,"init",global.init)
+
+		for (var i = 0;i < array_length(global.story);i++) {
+			global.story[i] = ini_read_real(_c,"st_" + string(i),global.story[i])
+			global.story[i] = ini_read_real(_c,"dvu_" + string(i),global.story[i])
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 		}
 	ini_close()
 }
@@ -148,6 +211,7 @@ if f_exists(_c) {
 load_soul()
 load_langs()
 
+<<<<<<< HEAD
 window_set_caption($"UNDERTALE {str_u(global.soul_name)}")
 
 global.tooMuch = "toomuch"
@@ -161,11 +225,32 @@ if f_exists(global.soulfile) {
 	ini_open(global.soulfile)
 		global.lmode = load_real("lmode",,sname)
 		global.fun = load_real("fun",,sname)
+=======
+if !variable_global_exists("font_init") {
+	load_fonts()
+
+	global.font_init = 1
+}
+
+window_set_caption("UNDERTALE " + string_upper(global.soul_name))
+
+global.tooMuch = "mus_toomuch"
+var tmus = "mus_toomuch_" + string_lower(global.soul_name)
+if file_exists(working_directory + tmus + ".ogg") {global.tooMuch = tmus}
+
+var sname = string_lower(global.soul_name)
+
+if file_exists(global.soulfile) {
+	ini_open(global.soulfile)
+		global.lmode = ini_read_real(sname,"lmode",0)
+		global.fun = ini_read_real(sname,"fun",0)
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	ini_close()
 }
 
 lmode_ef()
 
+<<<<<<< HEAD
 if !i_exists(border) {i_create(x - 159.5,y - 32,depth - 15,border)}
 else {
 	_c = global.soulfile
@@ -173,10 +258,20 @@ else {
 	if f_exists(_c) {
 		ini_open(_c)
 			border.cur_b = load_real("b",border.cur_b,str_l(global.soul_name))
+=======
+if !i_exists(border) {i_create(x - 159.5,y - 32,depth - 9,border)}
+else {
+	_c = global.soulfile
+
+	if file_exists(_c) {
+		ini_open(_c)
+			border.cur_b = ini_read_real(string_lower(global.soul_name),"b",border.cur_b)
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 		ini_close()
 	}
 }
 
+<<<<<<< HEAD
 if !i_exists(display) {i_create(0,0,depth - 10,display)}
 
 depth = -9999
@@ -184,3 +279,32 @@ quit = 0
 resetted = 0
 
 reload_memory()
+=======
+myHP = 0
+itPronoun = 0
+itPr[0] = "o"
+itPr[1] = "a"
+
+curwpslot = 0
+curarslot = 0
+
+drawroom = 0
+prevroom = room
+drawroomtxt = ""
+roomcolor = c_dkgray
+invalidname = 0
+invalidalpha = 0
+invalidtimer = 0
+
+depth = -9999
+quit = 0
+frame = 0
+frame_adv = 0
+quitAlp = 0
+
+drawmus = 0
+musvol = 1
+muspit = 1
+musloop = 1
+resetted = 0
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e

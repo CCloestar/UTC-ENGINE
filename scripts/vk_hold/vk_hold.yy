@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"vk_hold",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"vk_hold",
+  "parent":{
+    "name":"keyboard",
+    "path":"folders/Scripts/keyboard.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

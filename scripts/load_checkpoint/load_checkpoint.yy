@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"load_checkpoint",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"load_checkpoint",
+  "parent":{
+    "name":"room",
+    "path":"folders/Scripts/room.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

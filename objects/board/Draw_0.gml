@@ -10,6 +10,7 @@ for (var i = 0;i < 2;i++) {
 	midy[i] = round(u[i] + ((d[i] - u[i]) / 2) - 10)
 }
 
+<<<<<<< HEAD
 var prData = {
 	"0": [37,255,601,384,0],
 	"-2": [37,255,601,384,1],
@@ -26,10 +27,42 @@ if preset != -1 {
 	}
 
 	preset = -1
+=======
+switch preset {
+	case -2:
+		for (var i = 0;i < 2;i++) {
+			l[i] = 37
+			u[i] = 255
+			r[i] = 601
+			d[i] = 384
+		}
+
+		preset = -1
+	break
+	
+	case 0:
+		l[0] = 37
+		u[0] = 255
+		r[0] = 601
+		d[0] = 384
+		
+		preset = -1
+	break
+	
+	case 1:
+		l[0] = 242
+		u[0] = 255
+		r[0] = 396
+		d[0] = 384
+		
+		preset = -1
+	break
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 }
 
 switch b.boardId {
 	default:
+<<<<<<< HEAD
 		var col = dark ? merge_color(c_green, c_lime, 0.5) : b.acol
 		draw_b(l[1] - 5,u[1] - 5,r[1] + 5,d[1] + 5,col,,5)
 	break
@@ -45,6 +78,24 @@ if in_debug() {
 	draw_txt(r[1] + 8,u[1] + 16,$"PRESET: {preset}",1)
 }
 
+=======
+		var col = b.acol
+
+		draw_box(l[1] - 5,u[1] - 5,r[1] + 5,d[1] + 5,col,,5)
+	break
+}
+
+if global.debug and display.d {
+	draw_font(1,0)
+	draw_set_halign(fa_center)
+	draw_set_color(c_silver)
+	draw_txt(l[1],u[1] - 32,string(l[1]) + "," + string(u[1]) + "," + string(r[1]) + "," + string(d[1]),1,1)
+	draw_txt(l[1],d[1] + 32,string(l[0]) + "," + string(u[0]) + "," + string(r[0]) + "," + string(d[0]),1,1)
+	draw_set_halign(fa_left)
+	draw_txt(r[1] + 8,u[1] + 16,"PRESET: " + string(preset),1,1)
+}
+	
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 function board_limit(limit) {
 	if limit[1] != limit[0] {
 		if abs((limit[1] - limit[0])) <= 15 {limit[1] = limit[0]}

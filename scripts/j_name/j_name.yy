@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"j_name",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"j_name",
+  "parent":{
+    "name":"debug",
+    "path":"folders/Scripts/debug.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

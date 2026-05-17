@@ -34,5 +34,9 @@
     "path":"sprites/heart_main/heart_main.yy",
   },
   "spriteMaskId":null,
+<<<<<<< HEAD
   "visible":true,
+=======
+  "visible":false,
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 }

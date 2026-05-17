@@ -10,7 +10,11 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
+<<<<<<< HEAD
   "duration":3.8399792,
+=======
+  "duration":3.8399773,
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "exportDir":"",
   "name":"fall_1",
   "parent":{

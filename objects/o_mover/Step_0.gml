@@ -5,7 +5,11 @@ if i_exists(d[0]) and i_exists(d[1]) {
 
 		var mx = d[1].x
 		var my = d[1].y
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 		dist = distance_to_point(mx,my)
 		dir = point_direction(x,y,mx,my)
 		amt = dist / sp
@@ -15,9 +19,16 @@ if i_exists(d[0]) and i_exists(d[1]) {
 
 	d[0].x += lengthdir_x(amt,dir)
 	d[0].y += lengthdir_y(amt,dir)
+<<<<<<< HEAD
 	if abs(d[0].x - d[1].x) < 1 {d[0].x = d[1].x}
 	if abs(d[0].y - d[1].y) < 1 {d[0].y = d[1].y}
 
+=======
+	
+	if abs(d[0].x - d[1].x) < 1 {d[0].x = d[1].x}
+	if abs(d[0].y - d[1].y) < 1 {d[0].y = d[1].y}
+	
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	if d[0].x = d[1].x and d[0].y = d[1].y {destroy()}
 }
 else {destroy()}

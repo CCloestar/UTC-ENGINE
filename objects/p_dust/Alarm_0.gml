@@ -1,5 +1,9 @@
 friction = 0.8
+<<<<<<< HEAD
 direction = rnd(36)
+=======
+direction = random(36)
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 if ws < 0.75 {direction = 180}
 if ws > 1.25 {direction = 0}

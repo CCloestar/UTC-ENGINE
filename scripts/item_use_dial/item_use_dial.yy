@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"item_use_dial",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"item_use_dial",
+  "parent":{
+    "name":"items",
+    "path":"folders/Scripts/items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"chara_spr",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"chara_spr",
+  "parent":{
+    "name":"draw",
+    "path":"folders/Scripts/draw.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

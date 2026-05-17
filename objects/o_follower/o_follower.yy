@@ -33,8 +33,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
+<<<<<<< HEAD
     "name":"toriel_0_t",
     "path":"sprites/toriel_0_t/toriel_0_t.yy",
+=======
+    "name":"null_2",
+    "path":"sprites/null_2/null_2.yy",
+>>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   },
   "spriteMaskId":null,
   "visible":true,

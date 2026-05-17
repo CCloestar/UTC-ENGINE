@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cam_get_height",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cam_get_height",
+  "parent":{
+    "name":"camera",
+    "path":"folders/Scripts/cutscene/general/camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

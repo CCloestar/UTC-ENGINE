@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"layercode",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"layercode",
+  "parent":{
+    "name":"effects",
+    "path":"folders/Scripts/effects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

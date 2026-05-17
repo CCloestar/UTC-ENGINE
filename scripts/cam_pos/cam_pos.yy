@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cam_pos",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cam_pos",
+  "parent":{
+    "name":"camera",
+    "path":"folders/Scripts/cutscene/general/camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
