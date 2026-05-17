@@ -79,12 +79,7 @@ talk = 0
 talkfr = 0
 ttalk = 0
 
-<<<<<<< HEAD
 dw = dw_check()
-=======
-load_d_dw()
-him_siner = 0
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 halp = 1
 
 for (var i = 0; i < 640;i++) {jumpy[i] = 0}

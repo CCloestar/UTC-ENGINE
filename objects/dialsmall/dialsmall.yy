@@ -30,14 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-<<<<<<< HEAD
   "spriteId":{
     "name":"no_spr",
     "path":"sprites/no_spr/no_spr.yy",
   },
-=======
-  "spriteId":null,
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,5 +1,4 @@
 mask_lay(,1)
-<<<<<<< HEAD
 dw = dw_check()
 
 trigger = 0
@@ -23,10 +22,3 @@ function box_check(){
 		}
 	}
 }
-=======
-load_d_dw()
-
-trigger = 0
-op = 0
-p = 0
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e

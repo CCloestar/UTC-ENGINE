@@ -34,13 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-<<<<<<< HEAD
     "name":"spikes_0",
     "path":"sprites/spikes_0/spikes_0.yy",
-=======
-    "name":"spikes",
-    "path":"sprites/spikes/spikes.yy",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   },
   "spriteMaskId":{
     "name":"d_wall",

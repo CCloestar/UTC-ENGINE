@@ -31,13 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-<<<<<<< HEAD
     "name":"lever_0",
     "path":"sprites/lever_0/lever_0.yy",
-=======
-    "name":"lever",
-    "path":"sprites/lever/lever.yy",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   },
   "spriteMaskId":null,
   "visible":true,

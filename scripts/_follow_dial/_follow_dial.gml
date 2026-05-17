@@ -3,7 +3,6 @@ function fl_dial(){
 	
 	with (df) {
 		m[0] = tr($"notopic{irnd(3)}")
-
 	}
 }
 

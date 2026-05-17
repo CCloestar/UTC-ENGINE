@@ -43,11 +43,7 @@ if collision_rectangle(x1,y1,x2,y2,c,0,1) {
 
 	x_ = 0
 	y_ = 0
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	var _sp = sp + 1
 
 	if !place_meeting(x + sign(1),y + sign(1),solids) {
@@ -62,11 +58,7 @@ if collision_rectangle(x1,y1,x2,y2,c,0,1) {
 					}
 				}
 			}
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 			if f = 3 and r_hold() {
 				if !place_meeting(x + _sp,y,solids) {x += sp}
 				else {
@@ -78,11 +70,7 @@ if collision_rectangle(x1,y1,x2,y2,c,0,1) {
 				}
 			}
 		}
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 		if _y {
 			if f = 2 and u_hold() {
 				if !place_meeting(x,y - _sp,solids) {y -= sp}
@@ -94,11 +82,7 @@ if collision_rectangle(x1,y1,x2,y2,c,0,1) {
 					}
 				}
 			}
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 			if f = 0 and d_hold() {
 				if !place_meeting(x,y + _sp,solids) {y += sp}
 				else {
@@ -116,9 +100,5 @@ if collision_rectangle(x1,y1,x2,y2,c,0,1) {
 }
 
 mask_lay(,1)
-<<<<<<< HEAD
 draw_a()
-=======
-draw_area()
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 draw_hitbox()

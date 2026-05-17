@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":2.7222707,
   "exportDir":"",
   "name":"UT_0",
   "parent":{

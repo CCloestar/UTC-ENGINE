@@ -27,7 +27,6 @@ function load_soul(){
 
 	switch global.curCh {
 		case 1:
-			//ADD YOUR SOUL STUFF HERE
 		break
 	}
 	
@@ -70,7 +69,6 @@ function lmode_ef(){
 
 	switch global.curCh {
 		case 1:
-			//ADD LIGHT MODE CONTENT CHECK HERE
 		break
 	}
 }

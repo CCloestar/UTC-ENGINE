@@ -97,7 +97,7 @@ function save_all(tosave = global.filename){
 		wb = [0]
 		a = ["None"]
 		ab = [0]
-		
+
 		var dw = dw_check()
 
 		for (var i = 0;i < arlen(global.name);i++) {
@@ -111,7 +111,7 @@ function save_all(tosave = global.filename){
 		}
 		
 		var fl,fl_amt,f_c,cc
-
+		
 		fl_amt = load_real("fl_amt",,s)
 		f_c = arlen(global.f_n) - 1
 
@@ -199,7 +199,7 @@ function save_file(saver,name = "",d_value = 0,type = 0,s = "savefile") {
 				else {ikey_delete(s,$"{name}_{i}")}
 			}
 		break
-
+		
 		case 3:
 			if !ar_contains(d_value,saver) {
 				if is_str(saver) {save_str(s,name,saver)}
@@ -255,7 +255,7 @@ function load_all(file = global.filename) {
 				global.name[i] = load_str($"name_{i}",global.name[i],s)
 				
 				s = $"{str_l(global.name[i])}_{i}"
-
+				
 				for (var o = 0;o < 2;o++) {
 					global.wep[i,o] = load_str($"w_{dw_check()}",global.wep[i,o],s)
 					global.wep_b[i,o] = load_real($"wb_{dw_check()}",global.wep_b[i,o],s)

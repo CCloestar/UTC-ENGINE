@@ -6,10 +6,7 @@
 	"--- Instruction ---": "― ボタンそうさ ―",
 	"start_0": "[PRESS [0] OR [1]]",
 	"start_1": "[PRESS ANY BUTTON]",
-<<<<<<< HEAD
 	"start_2": "[PRESS CONFIRM BUTTON]",
-=======
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"inst0": "[[0] / [1]]",
 	"inst1": "[[0] / [1]]",
 	"inst2": "[[0] / [1]]",
@@ -32,20 +29,12 @@
 	"set_6": "げんご",
 	"set_7": "フレーム",
 	"b_0": "なし",
-<<<<<<< HEAD
 	"b_1": "シンプル",
 	"b_2": "セピア",
 	"b_3": "ダイナミック",
 	"set_8_0": "キーボードバインド",
 	"set_8_1": "コントローラの設定",
 	"set_8_2": "タッチパッド設定",
-=======
-	"b_1": "ダイナミック",
-	"b_2": "シンプル",
-	"b_3": "セピア",
-	"b_null_4": "いせき",
-	"set_8_0": "キーボードバインド",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"DOWN": "ダウン",
 	"RIGHT": "ライト",
 	"UP": "アップ",
@@ -70,30 +59,17 @@
 	"Numpad -": "テンキー-",
 	"Numpad .": "テンキー.",
 	"Numpad /": "テンキー/",
-<<<<<<< HEAD
-=======
-	"set_8_1": "コントローラの設定",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"se_null_0": "いのち  うむ\nひのひかりにこそ\nたえしのべ",
 	"se_null_1": "はる  きたり\nまなびの  ひびも\nまた  きたり",
 	"se_null_2": "おちば  はき\nはけよ  わがみに\nふる  さいなん",
 	"se_null_3": "そと  さむし\nきみが  そばの\nぬくもりよ",
 	"EXIT": "とじる",
-<<<<<<< HEAD
 	"joy_0": "確定       - [[0] + [1]] :       ",
 	"joy_1": "キャンセル - [[0] + [1]] :            ",
 	"joy_2": "メニュー   - [[0] + [1]] :               ",
 	"ANALOG SENSITIVITY:": "アナログ感度：",
 	"ANALOG SENSITIVITY SENSITIVITY:": "アナログ感度の感度：",
 	"dch": "移動操作：",
-=======
-	"joy_0": "確定     - [[0] + [1]] :      ",
-	"joy_1": "キャンセル - [[0] + [1]] :         ",
-	"joy_2": "メニュー   - [[0] + [1]] :            ",
-	"ANALOG SENSITIVITY:": "アナログ感度：",
-	"ANALOG SENSITIVITY SENSITIVITY:": "アナログ感度の感度：",
-	"dch": "移動操作： [0]",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"dir_0": "ノーマル",
 	"dir_1": "アナログのみ",
 	"dir_2": "POVのみ",
@@ -106,19 +82,11 @@
 	"Yes": "はい",
 	"No": "いいえ",
 	"Go Back": "もどる",
-<<<<<<< HEAD
 	"Name the fallen human.": "おちたニンゲンに  なまえをつけてください",
 	"Is this name correct?": "このなまえで\nよろしいですか？",
 	"toriel_fun": "ちゃんと　なまえを\nかんがえるのよ。",
 	"WARNING: this name will\nmake your life hell.\nProceed anyway?": "けいこく：このなまえは\nじごくへの  いりぐち…\nこのまま  はじめますか？",
 	"A name has already\nbeen chosen.": "すでに  なまえが\nつけられています。",
-=======
-	"Name the fallen human.": "おちたニンゲンに なまえをつけてください",
-	"Is this name correct?": "このなまえで\nよろしいですか？",
-	"toriel_fun": "ちゃんと　なまえを\nかんがえるのよ。",
-	"WARNING: this name will \nmake your life hell. \nProceed anyway?": "けいこく：このなまえは\nじごくへの  いりぐち…\nこのまま  はじめますか？",
-	"A name has already \nbeen chosen.": "すでに  なまえが\nつけられています。",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"hp_0": "hp",
 	"hp_1": "attempt  [2]",
 	"g_0": "g",
@@ -140,11 +108,7 @@
 	"* Click...": "＊ ツー…",
 	"Save": "セーブ",
 	"Return": "もどる",
-<<<<<<< HEAD
 	"fsave0": "セーブしました。",
-=======
-	"fsave0": "セーブしました[0]",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"fsave1": "ファイルが保存されすぎています。",
 	"lv_1": "LV  [0]",
 	"hp_2": "HP  [0]/[1]",
@@ -161,27 +125,16 @@
 	"* (HP fully restored.)": "＊ (HPが  まんタンになった)",
 	"wintxt0": "＊ YOU WIN！&&＊ [0]EXPと[1]ゴールドを  かくとく！",
 	"wintxt1": "＊ YOU WIN！&&＊ [0]EXPと[1]ダークゴールドを  かくとく！",
-<<<<<<< HEAD
-	"* Your LV increased.": "＊ LVが  あがった。",
-=======
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"* Your LOVE increased.": "＊ LOVEが  あがった。",
 	"* But nobody came.": "＊ しかし  だれも  こなかった。",
-	"rk": "~R＊ [0]体  のこっている。",
-	"* Determination.": "＊ ケツイ。",
+	"rk_0": "~R＊ [0]体  のこっている。",
+	"rk_1": "＊ ケツイ。",
 	"* Check": "＊ ぶんせき",
 	"* Spare": "＊ にがす",
 	"* Flee": "＊ にげる",
 	"recov": "＊ HPが  [0]かいふくした！",
-	"* Your HP was maxed out": "＊ HPが  まんたんに  なった[0]",
-	"buyTxt_0": "$ - [0]G",
-	"buyTxt_1": "$ - [0]D.G",
-	"buyTxt_S": "SPACE - [0]/8",
-<<<<<<< HEAD
+	"* Your HP was maxed out.": "＊ HPが  まんたんに  なった。",
 	"* Use the box?&2         Yes         No": "＊ いじげんボックスを  つかう？&2        はい        いいえ",
-=======
-	"* Use the box?&2         Yes         No": "＊ いじげんボックスを  つかう？&2          はい          いいえ",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"INVENTORY": "もちもの",
 	"BOX": "ボックス",
 	"box": "[[0]]/[[1]]で  しゅうりょう",
@@ -189,10 +142,7 @@
 	"Sell": "うる",
 	"Talk": "はなす",
 	"Exit": "もどる",
-<<<<<<< HEAD
-=======
-	"--- SOLD OUT ---": "--- うりきれ ---",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
+
 	"put_0": "＊ アイテムを  もっていない。&&＊ なにかを  いれるふりをした。",
 	"put_1": "＊ アイテムを  もっていない。&&＊ はこのなかを  ただみつめた。",
 	"put_2": "＊ アイテムを  もっていない。&&＊ なにかを  いれるところを&&   そうぞうした。",
@@ -200,10 +150,7 @@
 	"tk_pick": "＊ おもちゃのナイフを  みつけた。&&＊ それを拾いますか？&&          はい          いいえ",
 	"tk_picked": "＊ おもちゃのナイフを手に入れた。",
 	"* Made of plastic.&&* A rarity nowadays.": "＊ プラスチックせい。&&   さいきんは  レアもの。",
-<<<<<<< HEAD
+
 	"* You equipped Toy Knife.": "＊ おもちゃのナイフを  そうびした。",
 	"": ""
-=======
-	"* You equipped Toy Knife.": "＊ おもちゃのナイフを  そうびした。"
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 }

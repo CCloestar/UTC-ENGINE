@@ -1,1 +1,0 @@
-txt = "spike_r1"

@@ -7,19 +7,13 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_64223B81","path":"rooms/rm_battle/rm_battle.yy",},
-<<<<<<< HEAD
     {"name":"inst_1E12EF2A","path":"rooms/rm_battle/rm_battle.yy",},
-=======
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_64223B81","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_64223B81","objectId":{"name":"battle_globals","path":"objects/battle_globals/battle_globals.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
-<<<<<<< HEAD
         {"$GMRInstance":"v4","%Name":"inst_1E12EF2A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E12EF2A","objectId":{"name":"o_cutscene","path":"objects/o_cutscene/o_cutscene.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-40.0,"y":0.0,},
-=======
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
   "name":"rm_battle",

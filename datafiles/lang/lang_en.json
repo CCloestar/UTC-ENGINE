@@ -3,10 +3,7 @@
 
 	"start_0": "[PRESS [0] OR [1]]",
 	"start_1": "[PRESS ANY BUTTON]",
-<<<<<<< HEAD
 	"start_2": "[PRESS CONFIRM BUTTON]",
-=======
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 	"inst0": "[[0] or [1]] - Confirm",
 	"inst1_0": "[[0] or [1]] - Cancel",
@@ -14,27 +11,19 @@
 	"inst2": "[[0] or [1]] - Menu (In-game)",
 	"inst3": "[F4] - Fullscreen",
 	"inst4": "[Hold ESC] - Quit",
-<<<<<<< HEAD
 
-=======
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"inst5_0": "When HP is 0, you lose.",
 	"inst5_1": "NO saves, NO healing, NO chances.",
 
 	"reset_0": "Reset",
 	"reset_1": "True Reset",
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"set_0": "EXIT",
 	"set_1": "SIMPLIFY VFX",
 	"set_2": "AUTO RUN",
 	"set_3": "LIGHT MODE",
 	"set_4": "SOUND VOLUME",
 	"set_5": "MUSIC VOLUME",
-<<<<<<< HEAD
 	
 	"holdx": "[Hold [0] or [1] to adjust with precision!]",
 	
@@ -47,18 +36,7 @@
 	"set_8_0": "KEYBOARD CONFIG",
 	"set_8_1": "JOYSTICK CONFIG",
 	"set_8_2": "TOUCHPAD CONFIG",
-=======
-	"holdx": "[Hold [0] or [1] to adjust with precision!]",
-	"set_6": "LANGUAGE",
-	"set_7": "BORDER",
-	"b_0": "NONE",
-	"b_1": "Dynamic",
-	"b_2": "Simple",
-	"b_3": "Sepia",
-	"b_null_4": "Ruins",
-	"set_8_0": "KEYBOARD CONFIG",
-	"set_8_1": "JOYSTICK CONFIG",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
+
 	"op_0": "OFF",
 	"op_1": "ON",
 
@@ -70,19 +48,12 @@
 	"dir_1": "ANALOG ONLY",
 	"dir_2": "POV ONLY",
 
-<<<<<<< HEAD
-	"se_null_0": "try to withstand\nthe sun's life-\ngiving rays",
-	"se_null_1": "spring time\nback to school",
-	"se_null_2": "sweep a leaf\nsweep away \ntroubles",
-	"se_null_3": "cold outside\nbut stay warm\ninside of you",
-=======
 	"se_null_0": "try to withstand \nthe sun's life-\ngiving rays",
 	"se_null_1": "spring time\nback to school",
 	"se_null_2": "sweep a leaf \nsweep away a \ntroubles",
 	"se_null_3": "cold outside \nbut stay warm \ninside of you",
 
 	"toriel_fun": "I think you should\nthink of your own\nname, my child.",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 	"hp_0": "hp",
 	"hp_1": "attempt  [0]",
@@ -94,26 +65,14 @@
 	"itDesc_2": "* \"[0]\" - Armor DF [1]",
 	"itDesc_3": "* \"[0]\" - [2]",
 	
-<<<<<<< HEAD
 	"recov0": "* You recovered [0] HP!",
 	"recov1": "* Your HP was maxed out.",
-	"recov1_cyan": "* Your HP was maxed out!",
 
 	"hideIt0": "* You've hidden away your&&  [0].",
 	"hideIt1": "* You've hidden away your&&  [0].",
 
 	"tk_pick": "* You found the Toy Knife.&&* Pick it up?&&         Yes         No",
 	"tk_picked": "* You got Toy Knife.",
-=======
-	"recov": "* You recovered [0] HP!",
-	"* Your HP was maxed out": "* Your HP was maxed out[0]",
-	
-	"hideIt0": "* You've hidden away your&&  [0].",
-	"hideIt1": "* You've hidden away your&&  [0].",
-
-	"tk_pick": "* (You found the Toy Knife.)&&* (Pick it up?)&&         Yes         No",
-	"tk_picked": "* (You got the Toy Knife.)",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 	"throw_0": "* You bid a quiet farewell&&  to the [0].",
 	"throw_1": "* You put the [0]&&  on the ground and gave it a&&  little pat.",
@@ -138,18 +97,11 @@
 	"notopic2": "* (You couldn't think of any&&  wicked sick topics to talk&&  about...)",
 	"notopic3": "* (You couldn't think of any neat&&  topics to talk about...)",
 
-<<<<<<< HEAD
 	"fsave0": "File saved.",
 	"fsave1": "File saved way too much.",
 
 	"rk_0": "~R* [0] Left.",
 	"rk_1": "* Determination.",
-=======
-	"fsave0": "File saved[0]",
-	"fsave1": "File saved way too much.",
-
-	"rk": "~R* [0] Left.",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 	"put_0": "* You have no items.&&* You put a little time into&&  the box.",
 	"put_1": "* You have no items.&&* You put a little effort&&  into the box.",
@@ -157,11 +109,8 @@
 
 	"box": "Press [[0]] or [[1]] to Finish",
 
-<<<<<<< HEAD
 	"TorielAct": "* T-Action",
 
-=======
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	"page": "PAGE [0]",
 
 	"null_e0": "* I'm outta here.",
@@ -172,21 +121,10 @@
 	"wintxt0": "* YOU WON!&&* You earned [0] XP and [1] gold.",
 	"wintxt1": "* YOU WON!&&* You earned [0] XP and [1] d.gold.",
 
-	"buyTxt_0": "$ - [0]G",
-	"buyTxt_1": "$ - [0]D.G",
-	"buyTxt_S": "SPACE - [0]/8",
-
-<<<<<<< HEAD
 	"go_h0": "And then,\"[0]'s\"&&path has ended.",
 	"go_h1": "However, just because&&you have lost it.",
 	"go_h2": "It does not mean you&&have lost forever.",
 	"go_h3": "Try again whenever&&you feel better.",
 
 	"": ""
-=======
-	"s_sellFor_0_0": "Sell [0] for [1]G?",
-	"s_sellFor_1_0": "Sell [0] for [1]D.G?",
-
-	".": "."
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 }

@@ -2,17 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"rdoor",
   "bboxMode":0,
-<<<<<<< HEAD
   "bbox_bottom":79,
   "bbox_left":0,
   "bbox_right":119,
   "bbox_top":0,
-=======
-  "bbox_bottom":78,
-  "bbox_left":7,
-  "bbox_right":108,
-  "bbox_top":1,
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

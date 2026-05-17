@@ -21,7 +21,6 @@ ft = 0
 
 var _c = "config.ini"
 
-<<<<<<< HEAD
 if f_exists(_c) {
 	ini_open(_c)
 		window_set_fullscreen(load_real("fScreen",,_c))
@@ -34,19 +33,5 @@ _c = global.soulfile
 if f_exists(_c) {
 	ini_open(_c)
 		cur_b = load_real("b",cur_b,str_l(global.soul_name))
-=======
-if is_deck() {window_set_fullscreen(1)}
-else if file_exists(_c) {
-	ini_open(_c)
-		window_set_fullscreen(ini_read_real(_c,"fScreen",0))
-	ini_close()
-}
-
-_c = global.soulfile
-
-if file_exists(_c) {
-	ini_open(_c)
-		cur_b = ini_read_real(string_lower(global.soul_name),"b",cur_b)
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 	ini_close()
 }

@@ -3,11 +3,7 @@
   "%Name":"HTML5",
   "name":"HTML5",
   "option_html5_allow_fullscreen":true,
-<<<<<<< HEAD
-  "option_html5_browser_title":"Made with UTC Engine",
-=======
   "option_html5_browser_title":"UNDERTALE CYAN",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "option_html5_centregame":false,
   "option_html5_display_cursor":true,
   "option_html5_facebook_app_display_name":"",
@@ -28,11 +24,7 @@
   "option_html5_scale":0,
   "option_html5_splash_png":"${options_dir}/html5/splash.png",
   "option_html5_texture_page":"2048x2048",
-<<<<<<< HEAD
   "option_html5_usebuiltinfont":false,
-=======
-  "option_html5_usebuiltinfont":true,
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "option_html5_usebuiltinparticles":true,
   "option_html5_usesplash":true,
   "option_html5_use_facebook":false,

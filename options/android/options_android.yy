@@ -11,11 +11,7 @@
   "option_android_compile_sdk":"",
   "option_android_device_support":0,
   "option_android_display_layout":"LAYOUT_IN_DISPLAY_CUTOUT_MODE_DEFAULT",
-<<<<<<< HEAD
-  "option_android_display_name":"Made with UTC Engine",
-=======
   "option_android_display_name":"Created with GameMaker",
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "option_android_edge_to_edge_display":false,
   "option_android_facebook_app_display_name":"",
   "option_android_facebook_id":"",

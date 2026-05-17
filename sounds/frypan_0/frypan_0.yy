@@ -10,11 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-<<<<<<< HEAD
   "duration":0.83295834,
-=======
-  "duration":0.8329705,
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
   "exportDir":"",
   "name":"frypan_0",
   "parent":{

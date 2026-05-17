@@ -4,21 +4,13 @@ switch global.gamemode {
 		if d_hold() {idir = 90}
 		if l_hold() {idir = 0}
 		if r_hold() {idir = 180}
-<<<<<<< HEAD
 
-=======
-			
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 		if dir != idir {
 			if !idir and dir > 180 {
 				neg = 1
 				dir -= 360
 			}
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 			if dir >= 0 and dir < 90 and idir = 270 {
 				neg = 2
 				dir = 360
@@ -29,70 +21,40 @@ switch global.gamemode {
 					dir %= 360
 					dif = (idir - dir)
 					dir += (dif * (2 / 3))
-<<<<<<< HEAD
 
 					if dir < 0 {dir += 360}
 
-=======
-			
-					if dir < 0 {dir += 360}
-			
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 					if abs(dif) < 15 {
 						dir = idir
 						neg = 0
 					}
 				break
-<<<<<<< HEAD
 
-=======
-		
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 				case 1:
 					dir %= 360
 					dif = abs(idir - dir)
 					dir += (dif * (2 / 3))
-<<<<<<< HEAD
 
-=======
-			
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 					if abs(abs(idir) - abs(dir)) < 15 {
 						dir = idir
 						neg = 0
 					}
 				break
-<<<<<<< HEAD
 
 				case 2:
 					dif = idir - dir
 					dir += (dif * (2 / 3))
 
-=======
-		
-				case 2:
-					dif = idir - dir
-					dir += (dif * (2 / 3))
-			
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 					if abs(abs(idir) - abs(dir)) < 15 {
 						dir = idir
 						neg = 0
 					}
 				break
-<<<<<<< HEAD
 
 				case 3:
 					dif = idir + dir
 					dir -= (dif * (2 / 3))
 
-=======
-		
-				case 3:
-					dif = idir + dir
-					dir -= (dif * (2 / 3))
-			
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 					if abs(abs(idir) - abs(dir)) < 15 {
 						dir = idir
 						neg = 0
@@ -100,19 +62,11 @@ switch global.gamemode {
 				break
 			}
 		}
-<<<<<<< HEAD
 
 		var lblue = merge_color(c_blue,c_white,0.25)
 		draw_set_circle_precision(12)
 		if f < 2 {draw_col(lblue)}
 		else {draw_col(c_red)}
-=======
-	
-		var lblue = merge_color(c_blue,c_white,0.25)
-		draw_set_circle_precision(12)
-		if f < 2 {draw_set_color(lblue)}
-		else {draw_set_color(c_red)}
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 
 		f--
 
@@ -120,16 +74,9 @@ switch global.gamemode {
 		var r = 30
 
 		draw_line_width((x - (cos(t) * r)) + ((-sin(t)) * r), (y + (sin(t) * r)) + ((-cos(t)) * r), (x + ((-cos(t)) * r)) + (sin(t) * r), (y + (sin(t) * r)) + (cos(t) * r), 3)
-<<<<<<< HEAD
 		draw_col(lblue)
 		draw_line_width((x - (cos(t) * r)) + ((-sin(t)) * r), (y + (sin(t) * r)) + ((-cos(t)) * r), (x + (((-(cos((t - 0.2)))) * r) / 2)) + ((sin((t - 0.2)) * r) / 2), (y + ((sin((t - 0.2)) * r) / 2)) + ((cos((t - 0.2)) * r) / 2), 3)
 		draw_cir(x,y,r,1,c_green)
-=======
-		draw_set_color(lblue)
-		draw_line_width((x - (cos(t) * r)) + ((-sin(t)) * r), (y + (sin(t) * r)) + ((-cos(t)) * r), (x + (((-(cos((t - 0.2)))) * r) / 2)) + ((sin((t - 0.2)) * r) / 2), (y + ((sin((t - 0.2)) * r) / 2)) + ((cos((t - 0.2)) * r) / 2), 3)
-		draw_set_color(c_green)
-		draw_circle(x,y,r,1)
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 		var tidir = degtorad(idir)
 		var col = collision_line((x - (cos(tidir) * r)) + ((-sin(tidir)) * r), (y + (sin(tidir) * r)) + ((-cos(tidir)) * r), (x + ((-cos(tidir)) * r)) + (sin(tidir) * r), (y + (sin(tidir) * r)) + (cos(tidir) * r),bullet,0,1)
 

@@ -10,11 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-<<<<<<< HEAD
-  "duration":0.0,
-=======
-  "duration":0.9533787,
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
+  "duration":0.95339584,
   "exportDir":"",
   "name":"slash_1",
   "parent":{

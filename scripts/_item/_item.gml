@@ -32,7 +32,6 @@ function item_list() {
 function item_pr(it = "") {
 	var i = {
 		"Toy Knife": irnd_r(200,400)
-		//ADD MORE ITEM PRICES HERE
 	}
 
 	return (i[$ it] ?? 0)
@@ -65,7 +64,7 @@ function item_use_dial(dw = 0,onlyUse = 0){
 			it_type = 1
 			at = 10
 			txt[0] = "* You have equipped the Toy Knife."
-			txt[1] = "* (Made out of plastic.)&&* (A rarity nowadays.)"
+			txt[1] = "* Made out of plastic.&&* A rarity nowadays."
 		break
 	}
 
@@ -161,7 +160,7 @@ function item_use_dial(dw = 0,onlyUse = 0){
 					throw_message[i] = tr("throw_4",tr(cur_it))
 					for (var o = 0; o < 4;o++) {throw_message[o] = tr($"throw_{o}",tr(cur_it))}
 				}
-
+				
 				txt[2] = throw_message[rnd(round(18))]
 
 				u.delete_post = 1
@@ -185,7 +184,7 @@ function swap_prevent(dw = 0){
 
 	return swap
 }
-
+	
 function item_amt(dw = -1) {
 	var amt = 0
 	if dw = -1 {dw = dw_check()}

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 timers_create(arlen(b_at_parent.timer))
 for (var i = 0;i < arlen(timer);i++) {siner[i] = 0}
 
@@ -6,16 +5,6 @@ b = battle_globals
 bo = board
 bull = object_get_name(object_index)
 
-=======
-for (var i = 0;i < array_length(b_at_parent.timer);i++) {
-	timer[i] = 0
-	trigger[i] = 0
-	siner[i] = 0
-}
-
-b = battle_globals
-bo = board
->>>>>>> 1731812de1943c5c91ceee1a0fc43738ca29353e
 draw = 1
 graze = 0
 time = 0
